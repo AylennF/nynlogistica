@@ -378,122 +378,6 @@
   padding: 0;
 }
 
-@media (min-width: 600px) {
-  .flexInicial {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  .flexInicial__grilla {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "NyN" "ComEx" "Boton";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -ms-grid-rows: 40% 100%;
-        grid-template-rows: 40% 100%;
-    padding: 15% 0 20% 0;
-    margin: 0;
-  }
-  .flexInicial__grilla__n {
-    font-size: 70px;
-    font-family: "Roboto Slab", serif;
-    color: #020752;
-    padding: 0px;
-    margin: 0px;
-  }
-  .flexInicial__grilla__anpersand {
-    font-size: 40px;
-    font-weight: light;
-    font-family: "Roboto Slab", serif;
-  }
-  .flexInicial__grilla__comercio {
-    font-size: 30px;
-    letter-spacing: 0px;
-    font-weight: light;
-    font-family: "Montserrat", sans-serif;
-  }
-  .flexInicial__grilla__exterior {
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-family: "Staatliches", cursive;
-  }
-  .flexInicial__fondo {
-    background-image: url("imagen2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-  }
-}
-
-@media (min-width: 950px) {
-  .flexInicial {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-  }
-  .flexInicial__grilla {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "NyN" "ComEx" "Boton";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -ms-grid-rows: 40% 100%;
-        grid-template-rows: 40% 100%;
-    padding: 15% 0 20% 0;
-    margin: 0;
-  }
-  .flexInicial__grilla__n {
-    font-size: 90px;
-    font-family: "Roboto Slab", serif;
-    color: #020752;
-    padding: 0px;
-    margin: 0px;
-  }
-  .flexInicial__grilla__comercio {
-    font-size: 35px;
-    letter-spacing: 0px;
-    font-weight: light;
-    font-family: "Montserrat", sans-serif;
-  }
-  .flexInicial__grilla__exterior {
-    font-size: 45px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-family: "Staatliches", cursive;
-  }
-  .flexInicial__fondo {
-    background-image: url("imagen2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-  }
-}
-
 .footer {
   background-color: black;
   margin: 0px;
@@ -1139,7 +1023,7 @@ section article {
   text-align: justify;
 }
 
-.flexInicial {
+.flexInicialM {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,7 +1038,7 @@ section article {
   margin: 0;
 }
 
-.flexInicial__grilla {
+.flexInicialM__grilla {
   -webkit-animation-name: efecto_cabecera;
           animation-name: efecto_cabecera;
   -webkit-animation-duration: 2.5s;
@@ -1176,7 +1060,7 @@ section article {
   margin: 0;
 }
 
-.flexInicial__grilla__texto {
+.flexInicialM__grilla__texto {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: texto;
@@ -1186,7 +1070,7 @@ section article {
   margin: 0px;
 }
 
-.flexInicial__grilla__textoGrande {
+.flexInicialM__grilla__textoGrande {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: textoGrande;
@@ -1197,7 +1081,7 @@ section article {
   font-family: "Montserrat", sans-serif;
 }
 
-.flexInicial__fondo {
+.flexInicialM__fondo {
   background-image: url("imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
