@@ -15,7 +15,7 @@
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   display: -webkit-box;
-  display: -mss-flexbox;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1205,7 +1205,7 @@ section article {
 }
 
 .flexInicial__fondo {
-  background-image: url("../Imagenes/imagen2.jpeg");
+  background-image: url("../imagenes/imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
