@@ -372,7 +372,7 @@
 }
 
 .flexInicial__fondo {
-  background-image: url("../Imagenes/imagen-min.jpg");
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -431,7 +431,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("../Imagenes/imagen-min.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -487,7 +487,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("../Imagenes/imagen-min.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
