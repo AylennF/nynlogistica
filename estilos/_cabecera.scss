@@ -1,64 +1,64 @@
-.flexInicial  {
-  display:flex;
-  flex-direction: row;
-  justify-content:center; 
-  padding:0;
-  margin:0;
+// .flexInicial  {
+//   display:flex;
+//   flex-direction: row;
+//   justify-content:center; 
+//   padding:0;
+//   margin:0;
   
-  &__grilla {
-    animation-name: efecto_cabecera;
-    animation-duration: 2.5s;
-    animation-delay: 0;
-    animation-timing-function: ease-in;
-      display: grid;
-      grid-template-areas:
-       "NyN"
-       "ComEx"
-       "Boton"
-        ;
-      justify-content: center;
-      text-align: center;
-      grid-template-rows:40% 100%;
-      padding:15% 0 20% 0;
-      margin: 0;
+//   &__grilla {
+//     animation-name: efecto_cabecera;
+//     animation-duration: 2.5s;
+//     animation-delay: 0;
+//     animation-timing-function: ease-in;
+//       display: grid;
+//       grid-template-areas:
+//        "NyN"
+//        "ComEx"
+//        "Boton"
+//         ;
+//       justify-content: center;
+//       text-align: center;
+//       grid-template-rows:40% 100%;
+//       padding:15% 0 20% 0;
+//       margin: 0;
     
 
-    &__n{
-      font-size: $nMobile;
-      font-family:$roboto;
-      color:rgb(2, 7, 82);
-      padding: 0px;
-      margin:0px;
-    }  
+//     &__n{
+//       font-size: $nMobile;
+//       font-family:$roboto;
+//       color:rgb(2, 7, 82);
+//       padding: 0px;
+//       margin:0px;
+//     }  
 
-    &__anpersand{
-      font-size: $andpersandMobile;
-      font-weight:light;
-      font-family:$roboto;
-    }
+//     &__anpersand{
+//       font-size: $andpersandMobile;
+//       font-weight:light;
+//       font-family:$roboto;
+//     }
 
-    &__comercio{
-      font-size: $comercioMobile;
-      letter-spacing: 0px;
-      font-weight:light;
-      font-family:$monserrat;
-    }
+//     &__comercio{
+//       font-size: $comercioMobile;
+//       letter-spacing: 0px;
+//       font-weight:light;
+//       font-family:$monserrat;
+//     }
 
-    &__exterior{
-      font-size:$exteriorMobile;
-      letter-spacing: 2px;
-      font-weight: bold;
-      font-family: $staatliches;
-    }
-  }
+//     &__exterior{
+//       font-size:$exteriorMobile;
+//       letter-spacing: 2px;
+//       font-weight: bold;
+//       font-family: $staatliches;
+//     }
+//   }
   
-  &__fondo {
-      background-image: url("imagen2.jpg");
-      background-repeat:no-repeat;
-      background-size: cover;
-      padding: 0;
-    }
-}
+//   &__fondo {
+//       background-image: url("imagen2.jpg");
+//       background-repeat:no-repeat;
+//       background-size: cover;
+//       padding: 0;
+//     }
+// }
 
 
 
@@ -124,57 +124,57 @@
 // }
 // }
 
-// @media (min-width: 950px) {
-// .flexInicial  {
-//   display:flex;
-//   flex-direction: row;
-//   justify-content:center; 
-//   padding:0;
-//   margin:0;
-//   height: 100vh;
+@media (min-width: 950px) {
+.flexInicial  {
+  display:flex;
+  flex-direction: row;
+  justify-content:center; 
+  padding:0;
+  margin:0;
+  height: 100vh;
   
-//   &__grilla {
-//       display: grid;
-//       grid-template-areas:
-//        "NyN"
-//        "ComEx"
-//        "Boton"
-//         ;
-//       justify-content: center;
-//       text-align: center;
-//       grid-template-rows:40% 100%;
-//       padding:15% 0 20% 0;
-//       margin: 0;
+  &__grilla {
+      display: grid;
+      grid-template-areas:
+       "NyN"
+       "ComEx"
+       "Boton"
+        ;
+      justify-content: center;
+      text-align: center;
+      grid-template-rows:40% 100%;
+      padding:15% 0 20% 0;
+      margin: 0;
     
 
-//     &__n{
-//       font-size: $nDesk;
-//       font-family:$roboto;
-//       color:rgb(2, 7, 82);
-//       padding: 0px;
-//       margin:0px;
-//     }  
+    &__n{
+      font-size: $nDesk;
+      font-family:$roboto;
+      color:rgb(2, 7, 82);
+      padding: 0px;
+      margin:0px;
+    }  
 
-//     &__comercio{
-//       font-size: $comercioDesk;
-//       letter-spacing: 0px;
-//       font-weight:light;
-//       font-family:$monserrat;
-//     }
+    &__comercio{
+      font-size: $comercioDesk;
+      letter-spacing: 0px;
+      font-weight:light;
+      font-family:$monserrat;
+    }
 
-//     &__exterior{
-//       font-size:$exteriorDesk;
-//       letter-spacing: 2px;
-//       font-weight: bold;
-//       font-family: $staatliches;
-//     }
-//   }
+    &__exterior{
+      font-size:$exteriorDesk;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-family: $staatliches;
+    }
+  }
   
-//   &__fondo {
-//       background-image: url("imagen2.jpg");
-//       background-repeat:no-repeat;
-//       background-size: cover;
-//       padding: 0;
-//     }
-// }
-// }
+  &__fondo {
+      background-image: url("imagen2.jpg");
+      background-repeat:no-repeat;
+      background-size: cover;
+      padding: 0;
+    }
+}
+}
