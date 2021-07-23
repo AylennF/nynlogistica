@@ -15,7 +15,7 @@
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   display: -webkit-box;
-  display: -ms-flexbox;
+  display: -mss-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -332,7 +332,9 @@
           animation-timing-function: ease-in;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "NyN" "ComEx" "Boton";
+      grid-template-areas: "NyN"
+ "ComEx"
+ "Boton";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -372,7 +374,7 @@
 }
 
 .flexInicial__fondo {
-  background-image: url("../Imagenes/MapaPueblos-min.jpeg");
+  background-image: url("../Imagenes/imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -396,7 +398,9 @@
   .flexInicial__grilla {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "NyN" "ComEx" "Boton";
+        grid-template-areas: "NyN"
+ "ComEx"
+ "Boton";
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -431,7 +435,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("../Imagenes/MapaPueblos-min.jpeg");
+    background-image: url("../Imagenes/imagen2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -457,7 +461,9 @@
   .flexInicial__grilla {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "NyN" "ComEx" "Boton";
+        grid-template-areas: "NyN"
+ "ComEx"
+ "Boton";
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -487,7 +493,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("../Imagenes/MapaPueblos-min.jpeg");
+    background-image: url("../Imagenes/imagen2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -643,7 +649,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../imagenes/imagen2.jpg");
+  background-image: url("../Imagenes/imagen2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
@@ -1165,7 +1171,8 @@ section article {
           animation-timing-function: ease-in;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "texto" "textoGrande";
+      grid-template-areas: "texto"
+ "textoGrande";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1198,7 +1205,7 @@ section article {
 }
 
 .flexInicial__fondo {
-  background-image: url("../imagenes/imagen2.jpg");
+  background-image: url("../Imagenes/imagen2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
