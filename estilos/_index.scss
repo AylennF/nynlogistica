@@ -1,0 +1,163 @@
+
+ .flexQuienesSomos {
+  display:flex;
+  justify-content:center; 
+  background-color: $colorAzul;
+  padding: 0;
+  
+  article {
+    font-size:$articleMobile;
+    color:$colorBlanco;
+    font-family: $monserrat;
+    text-align: justify; 
+  }
+  
+  h2 {
+    color:$colorAmarillo;
+    font-size: $h2Mobile;
+    font-family:$roboto;
+  }
+  
+  &__grilla {
+
+    display: grid;
+    grid-template-areas:
+    "Foto Texto"
+    ;      
+    grid-template-rows:100%;
+    grid-template-columns: 33% 60%;
+    grid-row-gap: 0fr;
+    
+    
+    &__imagen {
+      grid-area: Foto;
+      height: 60vh;
+    }
+    
+    &__texto{
+      grid-area: Texto;  
+      }
+    }
+
+  }
+
+  .flexInfo{
+    display:flex;
+    margin:15px;
+    
+    h3 {
+      color:$colorAmarillo;
+      font: size $h3Mobile;
+      font-family:$roboto;
+      text-align: center;
+    }
+
+    article {
+      color:$colorBlanco;
+      font-size: $articleMobile;
+      font-family: $monserrat;
+      text-align: center;
+    }
+     
+    &__grilla{
+      display: grid;
+      grid-template-areas:
+        "info1 info2"
+        ;
+      grid-template-rows: 100%;
+      padding: 2% 2% 3% 2%;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 6%;
+      grid-row-gap:0;
+      justify-content: center;
+      text-align: center;
+
+      &__1 {
+        grid-area:info1;
+        border-radius: 3%;
+        background-color: $colorAzul;
+        padding:10px;
+      }
+
+      &__2{
+        grid-area:info2;
+        border-radius: 3%;
+        background-color: $colorAzul;
+        padding:10px;
+      }
+    }  
+  }  
+
+  .flexMapa{
+    display:flex;
+    padding:0;
+    background-color:$colorAzul;
+
+    &__grilla {
+      display: grid;
+      text-align: center;
+      grid-template-areas:
+        "ubicacion mapa"
+        ;
+      
+      grid-template-rows: 100%;
+      grid-template-columns:1fr 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+  
+      &__ubicacion {
+        grid-area:ubicacion;
+        padding-bottom: 7%;
+        
+        h2 {
+          color:$colorAmarillo;
+          font-size: $h2Desk;
+          font-family:$roboto;
+        }
+        
+        article {
+          text-align: center;
+          color:$colorBlanco;
+          font-size: $articleDesk;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        &__articleBold{
+          font-weight: bold;
+          }
+      } 
+
+      &__mapa {
+        grid-area:mapa;
+
+        &__tam{
+          height:100%;
+          width:100%;
+        }
+      }
+  
+  
+    }
+  }
+
+
+  //MEDIAS
+  @media (min-width: 950px) {
+  .flexInfo{
+    h3 {
+      color:$colorAmarillo;
+      font-size: $h3Desk;
+      font-family:$roboto;
+      text-align: center;
+    }
+
+    article {
+      color:$colorBlanco;
+      font-size: $articleDesk;
+      font-family: $monserrat;
+      text-align: center;
+    }
+  }
+  }
+
+

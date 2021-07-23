@@ -1,0 +1,163 @@
+section {
+  #azul{
+    h2 a{
+    text-decoration: none;
+    color:$colorAzul;
+    font-size:$h2Desk;
+    font-family:$roboto;
+    }
+    
+    article{
+      color:$colorNegro;
+      font-size:$articleDesk;
+      font-family:$monserrat;
+      text-align: justify;
+
+      span{
+        font-style: italic;
+      }
+    }
+  }
+
+  #amarillo {
+    h2 a{
+      text-decoration: none;
+      color:$colorAmarillo;
+      font-size:$h2Desk;
+      font-family:$roboto;
+    }
+    article {
+      color:$colorBlanco;
+      font-size:$articleDesk;
+      font-family:$monserrat;
+      text-align: justify;
+     
+      span{
+        font-style: italic;
+      }
+    }
+}
+
+.gridHisopado { 
+    display: grid;
+    grid-template-areas:
+    "imgHisopado txtHisopado"
+    ;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows:100%;
+    grid-template-columns:1fr 1fr;
+    column-gap:0;
+    row-gap: 0;
+    padding:0;
+    margin: 0;
+    background-color: $colorAzul;
+
+    .imgHisopado {
+      grid-area: imgHisopado;
+      img {width:100%;}
+    }
+
+    .txtHisopado {
+      grid-area: txtHisopado;
+      align-self: center;
+      padding:20px;
+    }
+  }
+}
+
+.gridDeclaracion { 
+  display: grid;
+  grid-template-areas:
+  "txtDeclaracion imgDeclaracion"
+  ;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows:100%;
+  grid-template-columns:1fr 1fr;
+  padding:0;
+  margin: 0;
+  background-color: $colorAmarillo;
+
+  .imgDeclaracion {
+    grid-area: imgDeclaracion;
+    img {width:100%;}
+  }
+  .txtDeclaracion {
+    align-self: center;
+    padding:20px;
+    grid-area: txtDeclaracion;
+  }
+}
+
+.gridApplus { 
+  display: grid;
+  grid-template-areas:
+  "imgApplus txtApplus"
+  ;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows:100%;
+  grid-template-columns:1fr 1fr;
+  padding:0;
+  margin: 0;
+  background-color: $colorAzul;
+
+  .imgApplus {
+    grid-area: imgApplus;
+    img {width:100%;}
+  }
+  .txtApplus {
+    align-self: center;
+    padding:20px;
+    grid-area: txtApplus;
+  }
+}
+
+.gridTarifa { 
+  display: grid;
+  grid-template-areas:
+  "txtTarifa imgTarifa"
+  ;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows:100%;
+  grid-template-columns:1fr 1fr;
+  padding:0;
+  margin: 0;
+  background-color: $colorAmarillo;
+
+  .imgTarifa {
+    grid-area: imgTarifa;
+    img {width:100%;}
+  }
+  .txtTarifa {
+    align-self: center;
+    padding:20px;
+    grid-area: txtTarifa;
+  }
+}
+
+.gridMercancia { 
+  display: grid;
+  grid-template-areas:
+  "imgMercancia txtMercancia"
+  ;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows:100%;
+  grid-template-columns:1fr 1fr;
+  padding:0;
+  margin: 0;
+  background-color: $colorAzul;
+
+  .imgMercancia {
+    grid-area: imgMercancia;
+    img {width:100%;}
+  }
+  .txtMercancia {
+    align-self: center;
+    padding:20px;
+    grid-area: txtMercancia;
+  }
+}

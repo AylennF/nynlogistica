@@ -1,0 +1,187 @@
+  .gridContacto { 
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "divInfo divContacto"
+    ;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows:100%;
+    grid-template-columns:1fr 0.42fr;
+    column-gap:0;
+    row-gap: 0;
+    padding:0;
+    margin: 0;
+  }
+
+  .divContacto {
+    padding-top: 20vh;
+    grid-area: divContacto;
+    font-weight:light;
+    font-family:$monserrat;
+    background-color: $colorBlanco;
+
+    animation-name: efecto_contacto;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    
+    form{
+      padding:40px;
+      text-align: justify;
+    }
+
+    input{
+      @extend .estiloForm;
+      text-align: justify;
+      height: 25px;
+      border-radius: 5px;
+    } 
+    
+    textarea {
+      text-align: justify;
+      margin-top: 15px;
+      @extend .estiloForm;
+    }
+
+    h2 {
+      text-align: right;
+      padding-right: 40px;
+        color:$colorAzul;
+        font-size:$h2Desk;
+        font-family:$roboto;
+    }
+
+    .boton {
+        input{
+            height: 30px;
+            width: 49%;
+        }
+    }
+  }
+  
+  .flexContacto {
+    grid-area: divInfo;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imagenes/imagen2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    justify-content: center;
+    text-align: center;
+    padding-top: 170px;
+
+    h1 {
+      color:$colorAzul;
+      font-size: $h2Desk;
+      font-family:$roboto;
+    }
+
+    h3 {
+      color:$colorNegro;
+      font-size: $h3Desk;
+      font-family:$roboto;
+    }
+
+    h4 {
+        color:$colorNegro;
+        font-size: $h4Desk;
+        font-family:$monserrat;
+        margin-bottom: 2px;
+      }
+
+    article {
+      color:$colorAzulRGBA;
+      font-size:$articleDesk;
+      font-weight:light;
+      font-family: $monserrat;
+      text-align: center;
+      margin-bottom: 4px;
+
+      a{
+        color:$colorAzulRGBA;
+        text-decoration: none;
+        font-size:$articleADesk;
+        font-weight:bold;
+        font-family: $monserrat;
+        text-align: center;
+      }
+    }
+
+    #titulo {
+      position: fixed;
+      grid-area:info;
+      text-align: left;
+      padding-left: 40px;
+      padding-bottom: 480px;
+    }
+
+    #andres {
+      @extend .tarjeta;
+      border-top-left-radius: 3%;
+      border-top-right-radius: 3%;
+      transition: height 0.4s ease-out;
+    }
+    
+    #andres:hover {
+      background-color: $colorBlanco;   
+      height: 202px;
+      padding-top: 0;
+      transition: all 0.4s ease-in-out;
+      .contenido{
+        visibility: visible;
+        transition-delay: 0.3s;
+      }
+      
+      h1{
+        margin-bottom: 0;
+      }
+    }
+
+    #florencia {
+      @extend .tarjeta;
+      border-bottom-left-radius: 3%;
+      border-bottom-right-radius: 3%;
+      transition: height 0.4s ease-in-out;
+    }
+
+    #florencia:hover {
+      background-color: $colorBlanco;   
+      height: 202px;
+      padding-top: 0;
+      transition: all 0.4s ease-in-out;
+      
+      .contenido{
+        visibility: visible;
+        transition-delay: 0.3s;
+      }
+    }
+    .tarjeta {
+      margin-right: 650px;
+      margin-left:100px;
+      height:70px;
+      padding-top: 2px;
+      position: relative;
+      align-self: left;
+      background-color: $colorbgObj;
+
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: rgba(134, 155, 248, 0.13);
+    
+      .contenido {
+        visibility: hidden;
+      }
+    }
+  }
+
+.estiloForm {
+  background-color: rgba(124, 149, 196, 0.637);
+  border-style:solid;
+  width: 100%;
+  border-width: 0.5px;
+  border-color: rgba(255, 255, 255, 0.596);
+  font-family:$monserrat;
+}
+

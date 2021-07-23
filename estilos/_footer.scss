@@ -1,0 +1,68 @@
+.footer {
+    background-color:$colorNegro;
+    margin:0px;
+
+    &__grid {
+        color:$colorBlanco;
+        display: grid;
+        grid-template-areas:
+          "Logo LineaFooter"
+          ;
+        
+        grid-template-rows:100%;
+        grid-template-columns: 0.3fr 1.7fr;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        
+        &__logo{
+            padding-top: 17px;
+            grid-area: Logo;
+            text-align: center;
+            border-right: dashed 1px rgba(255, 255, 255, 0.548);
+
+            &__n {
+                font-size: $nFooter;
+                font-family: $roboto;
+                color:$colorBlanco;
+                padding: 0px;
+                margin:0px;
+                text-align: center;
+            }
+
+            &__anpersand{
+                font-size: $anpersandFMobile;
+                font-weight:light;
+                font-family:$roboto;
+                text-align: center;
+            }
+
+            &__comercio{
+                font-size: $comercioFMobile;
+                font-weight:light;
+                color:$colorBlanco;
+                font-family: 'Montserrat', sans-serif; 
+                text-align: center;
+            }
+        }
+
+        &__linea {
+            grid-area: LineaFooter;
+            text-align: center;
+            text-decoration: none;
+            color: $colorBlanco;
+            font-size:$textoFooter;
+            font-family: $monserrat;
+            font-weight: bold;
+
+            a{
+            text-decoration: none;
+            color: $colorBlanco;
+            font-size:$textoFooter;
+            font-family: $monserrat;
+            font-weight: bold;
+            }
+        }
+
+
+    }
+}
