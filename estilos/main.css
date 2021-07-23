@@ -372,7 +372,7 @@
 }
 
 .flexInicial__fondo {
-  background-image: url("../Imagenes/imagen2.jpg");
+  background-image: url("imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -431,7 +431,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("../Imagenes/imagen2.jpg");
+    background-image: url("imagen2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -487,7 +487,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("../Imagenes/imagen2.jpg");
+    background-image: url("imagen2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -643,7 +643,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../Imagenes/imagen2.jpg");
+  background-image: url("imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
@@ -1198,7 +1198,7 @@ section article {
 }
 
 .flexInicial__fondo {
-  background-image: url("../Imagenes/imagen2.jpg");
+  background-image: url("imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
