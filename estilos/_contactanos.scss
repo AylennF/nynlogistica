@@ -70,7 +70,7 @@
 
     justify-content: center;
     text-align: center;
-    padding-top: 170px;
+    padding-top: 20vh;
 
     h1 {
       color:$colorAzul;
@@ -110,11 +110,11 @@
     }
 
     #titulo {
-      position: fixed;
-      grid-area:info;
-      text-align: left;
-      padding-left: 40px;
-      padding-bottom: 480px;
+      position: relative;
+      grid-area: info;
+      text-align: center;
+      // padding-left: 40px;
+      // padding-bottom: 480px;
     }
 
     #andres {
@@ -130,7 +130,7 @@
       padding-top: 0;
       transition: all 0.4s ease-in-out;
       .contenido{
-        visibility: visible;
+        visibility: visible;s
         transition-delay: 0.3s;
       }
       
@@ -158,12 +158,13 @@
       }
     }
     .tarjeta {
-      margin-right: 40vw;
-      margin-left:100px;
+      // margin-right: 40vw;
+      // margin-left:100px;
       height:10vh;
       padding-top: 2vh;
+      width: 20vw;
       position: relative;
-      align-self: left;
+      align-self: center;
       background-color: $colorbgObj;
 
       border-style: solid;

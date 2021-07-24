@@ -613,14 +613,13 @@
 }
 
 .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
-  margin-right: 40vw;
-  margin-left: 100px;
   height: 10vh;
   padding-top: 2vh;
+  width: 18vw;
   position: relative;
-  -ms-flex-item-align: left;
-      -ms-grid-row-align: left;
-      align-self: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   background-color: #eceff5;
   border-style: solid;
   border-width: 0.5px;
