@@ -518,7 +518,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding-top: 170px;
+  padding-top: 20vh;
 }
 
 .flexContacto h1 {
@@ -559,11 +559,9 @@
 }
 
 .flexContacto #titulo {
-  position: fixed;
+  position: relative;
   grid-area: info;
-  text-align: left;
-  padding-left: 40px;
-  padding-bottom: 480px;
+  text-align: center;
 }
 
 .flexContacto #andres {
@@ -615,7 +613,7 @@
 .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
   height: 10vh;
   padding-top: 2vh;
-  width: 18vw;
+  width: 20vw;
   position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
