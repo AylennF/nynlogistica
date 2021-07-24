@@ -355,7 +355,7 @@
     font-family: "Staatliches", cursive;
   }
   .flexInicial__fondo {
-    background-image: url("imagen2.jpg");
+    background-image: url("../Imagenes/imagen2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -511,7 +511,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("imagen2.jpg");
+  background-image: url("../Imagenes/imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
@@ -575,7 +575,7 @@
 
 .flexContacto #andres:hover {
   background-color: #f0f0f0;
-  height: 202px;
+  height: 28vh;
   padding-top: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -600,7 +600,7 @@
 
 .flexContacto #florencia:hover {
   background-color: #f0f0f0;
-  height: 202px;
+  height: 28vh;
   padding-top: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -615,8 +615,8 @@
 .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
   margin-right: 650px;
   margin-left: 100px;
-  height: 70px;
-  padding-top: 2px;
+  height: 10vh;
+  padding-top: 2vh;
   position: relative;
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
@@ -1020,6 +1020,7 @@ section article {
           justify-content: center;
   padding: 0;
   margin: 0;
+  height: 100vh;
 }
 
 .flexInicialM__grilla {
@@ -1066,7 +1067,7 @@ section article {
 }
 
 .flexInicialM__fondo {
-  background-image: url("imagen2.jpg");
+  background-image: url("../Imagenes/imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
