@@ -272,7 +272,7 @@
 .flexMapa__grilla__ubicacion article {
   text-align: center;
   color: #f0f0f0;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -300,7 +300,7 @@
   }
   .flexInfo article {
     color: #f0f0f0;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     font-family: "Montserrat", sans-serif;
     text-align: center;
   }
@@ -541,7 +541,7 @@
 
 .flexContacto article {
   color: rgba(26, 35, 136, 0.856);
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-weight: light;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -842,7 +842,7 @@ section #azul h2 a {
 
 section #azul article {
   color: black;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
@@ -860,7 +860,7 @@ section #amarillo h2 a {
 
 section #amarillo article {
   color: #f0f0f0;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
@@ -1055,5 +1055,68 @@ section .gridHisopado .txtHisopado {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: txtMercancia;
+}
+
+.flexFaq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.flexFaq h3 {
+  color: black;
+  font-size: 1.5vw;
+  font-family: "Roboto Slab", serif;
+}
+
+.flexFaq article {
+  font-size: 1.1vw;
+  font-weight: light;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
+  height: 9vh;
+  width: 90vw;
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #eceff5;
+  margin-bottom: 0.5vh;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(134, 155, 248, 0.13);
+}
+
+.flexFaq .tarjeta .contenido, .flexFaq .flexContacto #andres .contenido, .flexContacto .flexFaq #andres .contenido, .flexFaq .flexContacto #florencia .contenido, .flexContacto .flexFaq #florencia .contenido {
+  visibility: hidden;
+}
+
+.flexFaq .tarjeta:hover, .flexFaq .flexContacto #andres:hover, .flexContacto .flexFaq #andres:hover, .flexFaq .flexContacto #florencia:hover, .flexContacto .flexFaq #florencia:hover {
+  height: 27%;
+  padding-bottom: 0.5vh;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.flexFaq .tarjeta:hover .contenido, .flexFaq .flexContacto #andres:hover .contenido, .flexContacto .flexFaq #andres:hover .contenido, .flexFaq .flexContacto #florencia:hover .contenido, .flexContacto .flexFaq #florencia:hover .contenido {
+  visibility: visible;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

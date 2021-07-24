@@ -1,0 +1,50 @@
+.flexFaq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    h3 {
+        color:$colorNegro;
+        font-size: $h3Desk;
+        font-family:$roboto;
+    }   
+    article {
+        font-size:$articleDesk;
+        font-weight:light;
+        font-family: $monserrat;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .tarjeta {
+        height:9vh;
+        width: 90vw;
+        position: relative;
+        justify-self: center;
+        align-self: center;
+        background-color: $colorbgObj;
+        margin-bottom: 0.5vh;
+  
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgba(134, 155, 248, 0.13);
+      
+        .contenido {
+          visibility: hidden;
+        }
+    }
+
+    .tarjeta:hover {
+        height: 27%;
+        padding-bottom: 0.5vh;
+        transition: all 0.4s ease-in-out;
+
+        .contenido{
+            visibility: visible;
+            transition-delay: 0.3s;
+          }
+    }
+}
