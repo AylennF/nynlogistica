@@ -1071,6 +1071,8 @@ section .gridHisopado .txtHisopado {
   text-align: center;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00094e), to(rgba(174, 192, 224, 0.562)));
+  background-image: linear-gradient(to bottom, #00094e, rgba(174, 192, 224, 0.562) 100%);
 }
 
 .flexFaq h3 {
