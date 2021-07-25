@@ -4,32 +4,23 @@
   padding: 0;
 }
 
-.alineo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.alineo .nav {
-  background-color: #00094e;
+.nav {
   width: 100vw;
+  background-color: #00094e;
   list-style-type: none;
-  margin-top: 0px;
-  position: absolute;
+  padding: 0 0 0 475px;
+  margin: 0;
+  position: fixed;
 }
 
-.alineo .nav ul {
+.nav ul {
   list-style-type: none;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-.alineo .nav li a {
+.nav li a {
   list-style-type: none;
   color: #f0f0f0;
   text-decoration: none;
@@ -41,20 +32,20 @@
   font-family: "Staatliches", cursive;
 }
 
-.alineo .nav li a:hover {
-  color: #0055a5;
+.nav li a:hover {
+  color: #c8d6e4;
   display: block;
   background-color: #b9dcf821;
 }
 
-.alineo .nav li ul {
+.nav li ul {
   display: none;
   position: absolute;
   padding: 0;
   text-align: left;
 }
 
-.alineo .nav li ul li {
+.nav li ul li {
   position: relative;
   padding: 0;
 }
@@ -458,7 +449,7 @@
 }
 
 .flexContacto article {
-  color: rgba(26, 35, 136, 0.856);
+  color: rgba(0, 9, 78, 0.425);
   font-size: 20px;
   font-weight: light;
   font-family: "Montserrat", sans-serif;
@@ -467,7 +458,7 @@
 }
 
 .flexContacto article a {
-  color: rgba(26, 35, 136, 0.856);
+  color: rgba(0, 9, 78, 0.425);
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
