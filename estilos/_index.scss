@@ -6,7 +6,7 @@
   padding: 0;
   
   article {
-    font-size:$articleMobile;
+    font-size:$articleDesk;
     color:$colorBlanco;
     font-family: $monserrat;
     text-align: justify; 
@@ -14,7 +14,7 @@
   
   h2 {
     color:$colorAmarillo;
-    font-size: $h2Mobile;
+    font-size: $h2Desk;
     font-family:$roboto;
   }
   
@@ -27,6 +27,7 @@
     grid-template-rows:100%;
     grid-template-columns: 33% 60%;
     grid-row-gap: 0fr;
+    align-content: center;
     
     
     &__imagen {
@@ -35,6 +36,7 @@
     }
     
     &__texto{
+      padding:300px;
       grid-area: Texto;  
       }
     }
@@ -74,14 +76,12 @@
 
       &__1 {
         grid-area:info1;
-        border-radius: 3%;
         background-color: $colorAzul;
         padding:10px;
       }
 
       &__2{
         grid-area:info2;
-        border-radius: 3%;
         background-color: $colorAzul;
         padding:10px;
       }

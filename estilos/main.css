@@ -25,6 +25,7 @@
 .alineo .nav {
   list-style-type: none;
   margin-top: 0px;
+  padding: 0;
   position: absolute;
 }
 
@@ -33,6 +34,15 @@
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  display: none;
+  position: absolute;
+  padding: 0;
+  text-align: left;
+}
+
+.alineo .nav ul li {
+  position: relative;
+  padding: 0;
 }
 
 .alineo .nav li a {
@@ -53,11 +63,59 @@
   background-color: #b9dcf821;
 }
 
+.nav > li {
+  float: left;
+}
+
+.nav li:hover > ul {
+  display: block;
+  padding: 0;
+}
+
+.alineo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.alineo .nav {
+  list-style-type: none;
+  margin-top: 0px;
+  position: absolute;
+}
+
+.alineo .nav ul {
+  list-style-type: none;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.alineo .nav li a {
+  list-style-type: none;
+  color: #00094e;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Staatliches", cursive;
+}
+
+.alineo .nav li a:hover {
+  color: #0055a5;
+  display: block;
+  background-color: #b9dcf821;
+}
+
 .alineo .nav li ul {
   display: none;
   position: absolute;
   padding: 0;
-  min-width: 40%;
   text-align: left;
 }
 
@@ -75,62 +133,6 @@
   padding: 0;
 }
 
-@media (min-width: 950px) {
-  .alineo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .alineo .nav {
-    list-style-type: none;
-    margin-top: 0px;
-    position: absolute;
-  }
-  .alineo .nav ul {
-    list-style-type: none;
-    text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .alineo .nav li a {
-    list-style-type: none;
-    color: #00094e;
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-family: "Staatliches", cursive;
-  }
-  .alineo .nav li a:hover {
-    color: #0055a5;
-    display: block;
-    background-color: #b9dcf821;
-  }
-  .alineo .nav li ul {
-    display: none;
-    position: absolute;
-    padding: 0;
-    min-width: 40%;
-    text-align: left;
-  }
-  .alineo .nav li ul li {
-    position: relative;
-    padding: 0;
-  }
-  .nav > li {
-    float: left;
-  }
-  .nav li:hover > ul {
-    display: block;
-    padding: 0;
-  }
-}
-
 .flexQuienesSomos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,7 +145,7 @@
 }
 
 .flexQuienesSomos article {
-  font-size: 1.8vw;
+  font-size: 20px;
   color: #f0f0f0;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
@@ -151,7 +153,7 @@
 
 .flexQuienesSomos h2 {
   color: rgba(253, 205, 142, 0.932);
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
@@ -164,6 +166,8 @@
   -ms-grid-columns: 33% 60%;
       grid-template-columns: 33% 60%;
   grid-row-gap: 0fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .flexQuienesSomos__grilla__imagen {
@@ -174,6 +178,7 @@
 }
 
 .flexQuienesSomos__grilla__texto {
+  padding: 300px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: Texto;
@@ -221,7 +226,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: info1;
-  border-radius: 3%;
   background-color: #00094e;
   padding: 10px;
 }
@@ -230,7 +234,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: info2;
-  border-radius: 3%;
   background-color: #00094e;
   padding: 10px;
 }
@@ -265,14 +268,14 @@
 
 .flexMapa__grilla__ubicacion h2 {
   color: rgba(253, 205, 142, 0.932);
-  font-size: 2.2vw;
+  font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
 .flexMapa__grilla__ubicacion article {
   text-align: center;
   color: #f0f0f0;
-  font-size: 1.1vw;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -294,13 +297,13 @@
 @media (min-width: 950px) {
   .flexInfo h3 {
     color: rgba(253, 205, 142, 0.932);
-    font-size: 1.5vw;
+    font-size: 23px;
     font-family: "Roboto Slab", serif;
     text-align: center;
   }
   .flexInfo article {
     color: #f0f0f0;
-    font-size: 1.1vw;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
   }
@@ -433,30 +436,8 @@
   font-weight: bold;
 }
 
-.gridContacto {
-  display: -ms-grid;
-  display: grid;
-  height: 100vh;
-      grid-template-areas: "divInfo divContacto";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -ms-grid-columns: 1fr 0.42fr;
-      grid-template-columns: 1fr 0.42fr;
-  -webkit-column-gap: 0;
-          column-gap: 0;
-  row-gap: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.divContacto {
+s .divContacto {
   padding-top: 20vh;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: divContacto;
   font-weight: light;
   font-family: "Montserrat", sans-serif;
@@ -471,39 +452,38 @@
           animation-timing-function: ease-in;
 }
 
-.divContacto form {
+s .divContacto form {
   padding: 40px;
   text-align: justify;
 }
 
-.divContacto input {
+s .divContacto input {
   text-align: justify;
   height: 25px;
   border-radius: 5px;
 }
 
-.divContacto textarea {
+s .divContacto textarea {
   text-align: justify;
   margin-top: 15px;
 }
 
-.divContacto h2 {
+s .divContacto h2 {
   text-align: right;
   padding-right: 40px;
   color: #00094e;
-  font-size: 2.2vw;
+  font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
-.divContacto .boton input {
+s .divContacto .boton input {
   height: 30px;
   width: 49%;
 }
 
 .flexContacto {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: divInfo;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,27 +502,27 @@
 
 .flexContacto h1 {
   color: #00094e;
-  font-size: 2.5vw;
+  font-size: 40px;
   font-family: "Roboto Slab", serif;
 }
 
 .flexContacto h3 {
   margin-top: 1vh;
   color: black;
-  font-size: 1.5vw;
+  font-size: 23px;
   font-family: "Roboto Slab", serif;
 }
 
 .flexContacto h4 {
   color: black;
-  font-size: 1vw;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 2px;
 }
 
 .flexContacto article {
   color: rgba(26, 35, 136, 0.856);
-  font-size: 1.1vw;
+  font-size: 20px;
   font-weight: light;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -552,30 +532,25 @@
 .flexContacto article a {
   color: rgba(26, 35, 136, 0.856);
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 20px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 .flexContacto #titulo {
-  position: absolute;
-  top: 19.5vh;
-  left: 17.5vw;
   grid-area: info;
   text-align: center;
 }
 
 .flexContacto #andres {
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
   -webkit-transition: height 0.4s ease-out;
   transition: height 0.4s ease-out;
 }
 
 .flexContacto #andres:hover {
   background-color: #f0f0f0;
-  height: 20%;
+  height: 200px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -591,17 +566,14 @@
 }
 
 .flexContacto #florencia {
-  border-bottom-left-radius: 3%;
-  border-bottom-right-radius: 3%;
   -webkit-transition: height 0.4s ease-in-out;
   transition: height 0.4s ease-in-out;
-  background-color: #f0f0f0;
 }
 
 .flexContacto #florencia:hover {
   background-image: none;
   background-color: #f0f0f0;
-  height: 27%;
+  height: 200px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -613,8 +585,8 @@
 }
 
 .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
-  height: 5%;
-  width: 18vw;
+  height: 60px;
+  width: 50vw;
   position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -631,7 +603,7 @@
   visibility: hidden;
 }
 
-.estiloForm, .divContacto input, .divContacto textarea {
+.estiloForm, s .divContacto input, s .divContacto textarea {
   background-color: rgba(124, 149, 196, 0.637);
   border-style: solid;
   width: 100%;
@@ -839,13 +811,13 @@
 section #azul h2 a {
   text-decoration: none;
   color: #00094e;
-  font-size: 2.2vw;
+  font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
 section #azul article {
   color: black;
-  font-size: 1.1vw;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
@@ -857,13 +829,13 @@ section #azul article span {
 section #amarillo h2 a {
   text-decoration: none;
   color: rgba(253, 205, 142, 0.932);
-  font-size: 2.2vw;
+  font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
 section #amarillo article {
   color: #f0f0f0;
-  font-size: 1.1vw;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
@@ -1079,12 +1051,12 @@ section .gridHisopado .txtHisopado {
 
 .flexFaq h3 {
   color: black;
-  font-size: 1.5vw;
+  font-size: 23px;
   font-family: "Roboto Slab", serif;
 }
 
 .flexFaq article {
-  font-size: 1.1vw;
+  font-size: 20px;
   font-weight: light;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -1141,7 +1113,7 @@ section .gridHisopado .txtHisopado {
 .flexMasInfo h3 {
   margin: 0;
   color: rgba(26, 35, 136, 0.856);
-  font-size: 2.5vw;
+  font-size: 40px;
   font-family: "Staatliches", cursive;
   letter-spacing: 5px;
 }
@@ -1160,7 +1132,7 @@ section .gridHisopado .txtHisopado {
   margin: 0;
   color: #f0f0f0;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 20px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }

@@ -1,20 +1,4 @@
-  .gridContacto { 
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-    "divInfo divContacto"
-    ;
-    justify-content: center;
-    text-align: center;
-    grid-template-rows:100%;
-    grid-template-columns:1fr 0.42fr;
-    column-gap:0;
-    row-gap: 0;
-    padding:0;
-    margin: 0;
-  }
-
-  .divContacto {
+s  .divContacto {
     padding-top: 20vh;
     grid-area: divContacto;
     font-weight:light;
@@ -62,6 +46,7 @@
   
   .flexContacto {
     grid-area: divInfo;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url("../Imagenes/imagen2.jpg");
@@ -110,23 +95,18 @@
     }
 
     #titulo {
-      position: absolute;
-      top: 19.5vh;
-      left: 17.5vw;
       grid-area: info;
       text-align: center;
     }
 
     #andres {
       @extend .tarjeta;
-      border-top-left-radius: 3%;
-      border-top-right-radius: 3%;
       transition: height 0.4s ease-out;
     }
     
     #andres:hover {
       background-color:$colorBlanco;   
-      height: 20%;
+      height: 200px;
       transition: all 0.4s ease-in-out;
       .contenido{
         visibility: visible;
@@ -140,16 +120,13 @@
 
     #florencia {
       @extend .tarjeta;
-      border-bottom-left-radius: 3%;
-      border-bottom-right-radius: 3%;
       transition: height 0.4s ease-in-out;
-      background-color: $colorBlanco;
     }
 
     #florencia:hover {
       background-image: none;
       background-color: $colorBlanco;   
-      height: 27%;
+      height: 200px;
       transition: all 0.4s ease-in-out;
       
       .contenido{
@@ -158,8 +135,8 @@
       }
     }
     .tarjeta {
-      height:5%;
-      width: 18vw;
+      height:60px;
+      width: 50vw;
       position: relative;
       justify-self: center;
       align-self: center;
