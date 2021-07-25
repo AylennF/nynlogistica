@@ -1,48 +1,57 @@
-s  .divContacto {
-    padding-top: 20vh;
-    grid-area: divContacto;
-    font-weight:light;
-    font-family:$monserrat;
-    background-color: $colorBlanco;
-
-    animation-name: efecto_contacto;
-    animation-duration: 1s;
-    animation-delay: 0;
-    animation-timing-function: ease-in;
+  .sectionContacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $colorAzul;
+    
+    .divContacto {
+      display: flex;
+      flex-direction: column;
+      grid-area: divContacto;
+      font-weight:light;
+      font-family:$monserrat;
+      width: 500px;
+      margin: 25px;
+      justify-content: center;
+      text-align: center;
+      background-color: $colorBlanco;
     
     form{
       padding:40px;
       text-align: justify;
     }
-
+    
     input{
       @extend .estiloForm;
       text-align: justify;
       height: 25px;
-      border-radius: 5px;
+      width: 30px;
+      // border-radius: 5px;
     } 
     
     textarea {
       text-align: justify;
       margin-top: 15px;
+      width: 100px;
       @extend .estiloForm;
     }
-
+    
     h2 {
-      text-align: right;
+      text-align: center;
       padding-right: 40px;
-        color:$colorAzul;
-        font-size:$h2Desk;
-        font-family:$roboto;
+      color:$colorAzul;
+      font-size:$h2Desk;
+      font-family:$roboto;
     }
-
+    
     .boton {
-        input{
-            height: 30px;
+      input{
+        height: 30px;
             width: 49%;
+          }
         }
-    }
   }
+}
   
   .flexContacto {
     grid-area: divInfo;
