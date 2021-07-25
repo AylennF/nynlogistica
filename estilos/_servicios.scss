@@ -1,0 +1,46 @@
+.flexServicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: $colorAzul;
+
+    h2{
+        color:$colorNegro;
+        font-size: $h3Desk;
+        font-family:$roboto;
+    }
+
+    article {
+        font-size:$articleDesk;
+        font-weight:light;
+        font-family: $monserrat;
+        text-align: center;
+    }
+
+    .servicio {
+        height:9vh;
+        width: 90vw;
+        position: relative;
+        justify-self: center;
+        align-self: center;
+        background-color: $colorBlanco;
+        transition: all 0.4s ease-in-out;
+
+        .contenidoServicio {
+            visibility: hidden;
+          }
+    }
+
+    .servicio:hover {
+        height: 27%;
+        padding-bottom: 0.5vh;
+        transition: all 0.4s ease-in-out;
+
+        .contenidoServicio {
+            transition: all 0.4s ease-in-out;
+            visibility: visible;
+            transition-delay: 0.3s;
+          }
+    }
+}
