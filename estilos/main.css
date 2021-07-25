@@ -137,6 +137,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -157,31 +161,12 @@
   font-family: "Roboto Slab", serif;
 }
 
-.flexQuienesSomos__grilla {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "Foto Texto";
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -ms-grid-columns: 33% 60%;
-      grid-template-columns: 33% 60%;
-  grid-row-gap: 0fr;
-  -ms-flex-line-pack: center;
-      align-content: center;
+.flexQuienesSomos .imagen {
+  height: 450px;
 }
 
-.flexQuienesSomos__grilla__imagen {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: Foto;
-  height: 60vh;
-}
-
-.flexQuienesSomos__grilla__texto {
-  padding: 300px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: Texto;
+.flexQuienesSomos .texto {
+  padding: 70px;
 }
 
 .flexInfo {
