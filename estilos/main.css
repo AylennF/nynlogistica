@@ -1083,7 +1083,7 @@ section .gridHisopado .txtHisopado {
 }
 
 .flexServicio {
-  padding: 150px 30px;
+  padding: 60px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,9 +1099,9 @@ section .gridHisopado .txtHisopado {
 }
 
 .flexServicio h2 {
-  color: black;
-  font-size: 30px;
-  font-family: "Roboto Slab", serif;
+  color: #d8e4f7;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .flexServicio article {
@@ -1114,11 +1114,11 @@ section .gridHisopado .txtHisopado {
 .flexServicio .servicio {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: #f0f0f0;
+  color: #d8e4f7;
 }
 
 .flexServicio .servicio i {
-  font-size: 45px;
+  font-size: 55px;
 }
 
 .flexServicio .servicio .contenidoServicio {
@@ -1132,37 +1132,10 @@ section .gridHisopado .txtHisopado {
   visibility: hidden;
 }
 
-.flexServicio .servicio:hover {
-  height: 400px;
-  padding-top: 0px;
-  background-color: #c8d6e4;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.flexServicio .servicio:hover h2 {
-  color: #00094e;
-}
-
-.flexServicio .servicio:hover i {
-  visibility: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  font-size: 5px;
-}
-
-.flexServicio .servicio:hover .contenidoServicio {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  visibility: visible;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
 .estiloServicio, .flexServicio .servicio {
   height: 210px;
   width: 325px;
-  margin: 25px;
+  margin: 35px;
   padding-top: 90px;
   position: relative;
   -webkit-box-pack: center;
@@ -1174,5 +1147,90 @@ section .gridHisopado .txtHisopado {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+section {
+  margin: 0;
+}
+
+section #azul {
+  background-color: #00094e;
+}
+
+section #azul h2 {
+  text-decoration: none;
+  color: rgba(253, 205, 142, 0.932);
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}
+
+section #azul article {
+  color: #f0f0f0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+section #amarillo {
+  background-color: rgba(253, 205, 142, 0.932);
+}
+
+section #amarillo h2 {
+  text-decoration: none;
+  color: #00094e;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}
+
+section #amarillo article {
+  color: black;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+section .flexServicioEspecifico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+section .flexServicioEspecifico .imagen {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .flexServicioEspecifico .imagen img {
+  height: 500px;
+  width: 550px;
+}
+
+section .flexServicioEspecifico .text {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 40px;
+}
+
+.estiloGrid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

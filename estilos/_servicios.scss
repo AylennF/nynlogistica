@@ -1,5 +1,5 @@
 .flexServicio {
-    padding:150px 30px;
+    padding:60px 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,9 +7,9 @@
     background-color: $colorAzul;
 
     h2{
-        color:$colorNegro;
-        font-size: $h2Desk;
-        font-family:$roboto;
+        color:rgb(216, 228, 247);
+        font-size: $h3Desk;
+        font-family:$monserrat;
     }
 
     article {
@@ -22,10 +22,10 @@
     .servicio{
         @extend .estiloServicio;
         transition: all 0.5s ease-in-out;
-        background-color: $colorBlanco;
+        color:rgb(216, 228, 247);
 
         i {
-            font-size: 45px;
+            font-size: 55px;
         }
         
         .contenidoServicio {
@@ -35,33 +35,12 @@
             visibility: hidden;
         }
     }
-
-    .servicio:hover {
-        height:400px;
-        padding-top: 0px;
-        background-color: $colorHover;
-        transition: all 0.4s ease-in-out;
-        
-        h2 {
-            color:$colorAzul;
-        }
-        i{
-            visibility: hidden;
-            transition: all 0.4s ease-in-out;
-            font-size: 5px;
-        }
-        .contenidoServicio {
-            transition: all 0.4s ease-in-out;
-            visibility: visible;
-            transition-delay: 0.4s;
-          }
-    }
 }
 
 .estiloServicio {
     height:210px;
     width: 325px;
-    margin:25px;
+    margin:35px;
     padding-top: 90px;
     position: relative;
     justify-content: center;
@@ -69,4 +48,70 @@
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+section {
+    margin:0;
+    #azul{ 
+        background-color: $colorAzul;
+        h2{
+            text-decoration: none;
+            color:$colorAmarillo;
+            font-size:$h2Desk;
+            font-family:$roboto;
+        }
+        
+        article{
+            color:$colorBlanco;
+            font-size:$articleDesk;
+            font-family:$monserrat;
+            text-align: justify;
+        }
+    }
+
+    #amarillo{
+        background-color: $colorAmarillo;
+        h2{
+            text-decoration: none;
+            color:$colorAzul;
+            font-size:$h2Desk;
+            font-family:$roboto;
+        }
+             
+        article{
+            color:$colorNegro;
+            font-size:$articleDesk;
+            font-family:$monserrat;
+            text-align: justify;
+        }
+    }
+
+    .flexServicioEspecifico {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding:0;
+        margin:0;
+        .imagen{
+        align-self: center;
+            img {
+            height: 500px;
+            width: 550px;
+        }
+        }
+
+        .text {
+        transition: all 0.5s ease-in-out;
+        align-self: center;
+        padding:40px;
+        }
+    }
+ 
+}
+.estiloGrid {
+    justify-content: center;
+    text-align: center;
+    padding:0;
+    margin: 0;
 }
