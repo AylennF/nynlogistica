@@ -1,4 +1,5 @@
 .flexServicio {
+    padding:150px 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,7 +8,7 @@
 
     h2{
         color:$colorNegro;
-        font-size: $h3Desk;
+        font-size: $h2Desk;
         font-family:$roboto;
     }
 
@@ -18,29 +19,54 @@
         text-align: center;
     }
 
-    .servicio {
-        height:9vh;
-        width: 90vw;
-        position: relative;
-        justify-self: center;
-        align-self: center;
+    .servicio{
+        @extend .estiloServicio;
+        transition: all 0.5s ease-in-out;
         background-color: $colorBlanco;
-        transition: all 0.4s ease-in-out;
 
+        i {
+            font-size: 45px;
+        }
+        
         .contenidoServicio {
+            display: flex;
+            text-align: center;
+            justify-content: center;
             visibility: hidden;
-          }
+        }
     }
 
     .servicio:hover {
-        height: 27%;
-        padding-bottom: 0.5vh;
+        height:400px;
+        padding-top: 0px;
+        background-color: $colorHover;
         transition: all 0.4s ease-in-out;
-
+        
+        h2 {
+            color:$colorAzul;
+        }
+        i{
+            visibility: hidden;
+            transition: all 0.4s ease-in-out;
+            font-size: 5px;
+        }
         .contenidoServicio {
             transition: all 0.4s ease-in-out;
             visibility: visible;
-            transition-delay: 0.3s;
+            transition-delay: 0.4s;
           }
     }
+}
+
+.estiloServicio {
+    height:210px;
+    width: 325px;
+    margin:25px;
+    padding-top: 90px;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
 }

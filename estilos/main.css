@@ -244,6 +244,14 @@
     height: 100vh;
   }
   .flexInicial__grilla {
+    -webkit-animation-name: efecto_cabecera;
+            animation-name: efecto_cabecera;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "NyN" "ComEx" "Boton";
@@ -1075,6 +1083,7 @@ section .gridHisopado .txtHisopado {
 }
 
 .flexServicio {
+  padding: 150px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,7 +1100,7 @@ section .gridHisopado .txtHisopado {
 
 .flexServicio h2 {
   color: black;
-  font-size: 23px;
+  font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
@@ -1103,35 +1112,67 @@ section .gridHisopado .txtHisopado {
 }
 
 .flexServicio .servicio {
-  height: 9vh;
-  width: 90vw;
-  position: relative;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: #f0f0f0;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+}
+
+.flexServicio .servicio i {
+  font-size: 45px;
 }
 
 .flexServicio .servicio .contenidoServicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   visibility: hidden;
 }
 
 .flexServicio .servicio:hover {
-  height: 27%;
-  padding-bottom: 0.5vh;
+  height: 400px;
+  padding-top: 0px;
+  background-color: #c8d6e4;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.flexServicio .servicio:hover h2 {
+  color: #00094e;
+}
+
+.flexServicio .servicio:hover i {
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-size: 5px;
 }
 
 .flexServicio .servicio:hover .contenidoServicio {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   visibility: visible;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.estiloServicio, .flexServicio .servicio {
+  height: 210px;
+  width: 325px;
+  margin: 25px;
+  padding-top: 90px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
