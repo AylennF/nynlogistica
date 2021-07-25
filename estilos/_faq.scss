@@ -3,13 +3,9 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    background-image: linear-gradient(
-        to bottom,
-        $colorAzul,
-        $colorbg 100%
-    );
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: $colorAzulRGBA;
 
     h3 {
         color:$colorNegro;
@@ -31,8 +27,9 @@
         justify-self: center;
         align-self: center;
         background-color: $colorbgObj;
-        margin-bottom: 0.5vh;
+        margin-bottom: 1vh;
   
+        transition: height 0.4s ease-out;
         border-style: solid;
         border-width: 0.5px;
         border-color: rgba(134, 155, 248, 0.13);
@@ -51,5 +48,42 @@
             visibility: visible;
             transition-delay: 0.3s;
           }
+    }
+}
+
+.flexMasInfo{
+    display: flex;
+    background-image: url("../Imagenes/imagen2.jpg"); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:100px;
+
+    h3 {
+        margin:0;
+        color:$colorAzulRGBA;
+        font-size: $h1Desk;
+        font-family:$staatliches;
+        letter-spacing: 5px;
+    } 
+    
+    .boton{
+        width: 200px;
+        height: 3%;
+        margin-left:50% ;
+        padding:0;
+        background-color: $colorAzulRGBA;  
+        text-align: center;
+
+        a{
+            padding:center;
+            margin:0;
+            color:$colorBlanco;
+            text-decoration: none;
+            font-size:$h4Desk;
+            font-weight:bold;
+            font-family: $monserrat;
+        }
     }
 }

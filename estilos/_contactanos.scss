@@ -78,6 +78,7 @@
     }
 
     h3 {
+      margin-top:1vh;
       color:$colorNegro;
       font-size: $h3Desk;
       font-family:$roboto;
@@ -109,7 +110,9 @@
     }
 
     #titulo {
-      position: relative;
+      position: absolute;
+      top: 19.5vh;
+      left: 17.5vw;
       grid-area: info;
       text-align: center;
     }
@@ -122,9 +125,8 @@
     }
     
     #andres:hover {
-      background-color: $colorBlanco;   
-      height: 27%;
-      padding-top: 0;
+      background-color:$colorBlanco;   
+      height: 20%;
       transition: all 0.4s ease-in-out;
       .contenido{
         visibility: visible;
@@ -141,12 +143,13 @@
       border-bottom-left-radius: 3%;
       border-bottom-right-radius: 3%;
       transition: height 0.4s ease-in-out;
+      background-color: $colorBlanco;
     }
 
     #florencia:hover {
+      background-image: none;
       background-color: $colorBlanco;   
       height: 27%;
-      padding-top: 0;
       transition: all 0.4s ease-in-out;
       
       .contenido{
@@ -155,7 +158,7 @@
       }
     }
     .tarjeta {
-      height:9vh;
+      height:5%;
       width: 18vw;
       position: relative;
       justify-self: center;

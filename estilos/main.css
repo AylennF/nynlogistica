@@ -1,5 +1,5 @@
 #fondo {
-  background-color: rgba(174, 192, 224, 0.562);
+  background-color: rgba(170, 178, 192, 0.705);
   margin: 0;
   padding: 0;
 }
@@ -527,6 +527,7 @@
 }
 
 .flexContacto h3 {
+  margin-top: 1vh;
   color: black;
   font-size: 1.5vw;
   font-family: "Roboto Slab", serif;
@@ -558,7 +559,9 @@
 }
 
 .flexContacto #titulo {
-  position: relative;
+  position: absolute;
+  top: 19.5vh;
+  left: 17.5vw;
   grid-area: info;
   text-align: center;
 }
@@ -572,8 +575,7 @@
 
 .flexContacto #andres:hover {
   background-color: #f0f0f0;
-  height: 27%;
-  padding-top: 0;
+  height: 20%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -593,12 +595,13 @@
   border-bottom-right-radius: 3%;
   -webkit-transition: height 0.4s ease-in-out;
   transition: height 0.4s ease-in-out;
+  background-color: #f0f0f0;
 }
 
 .flexContacto #florencia:hover {
+  background-image: none;
   background-color: #f0f0f0;
   height: 27%;
-  padding-top: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -610,7 +613,7 @@
 }
 
 .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
-  height: 9vh;
+  height: 5%;
   width: 18vw;
   position: relative;
   -ms-grid-column-align: center;
@@ -618,7 +621,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #eceff5;
+  background-color: rgba(233, 236, 245, 0.863);
   border-style: solid;
   border-width: 0.5px;
   border-color: rgba(134, 155, 248, 0.13);
@@ -1069,10 +1072,9 @@ section .gridHisopado .txtHisopado {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00094e), to(rgba(174, 192, 224, 0.562)));
-  background-image: linear-gradient(to bottom, #00094e, rgba(174, 192, 224, 0.562) 100%);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background-color: rgba(26, 35, 136, 0.856);
 }
 
 .flexFaq h3 {
@@ -1098,8 +1100,10 @@ section .gridHisopado .txtHisopado {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #eceff5;
-  margin-bottom: 0.5vh;
+  background-color: rgba(233, 236, 245, 0.863);
+  margin-bottom: 1vh;
+  -webkit-transition: height 0.4s ease-out;
+  transition: height 0.4s ease-out;
   border-style: solid;
   border-width: 0.5px;
   border-color: rgba(134, 155, 248, 0.13);
@@ -1120,5 +1124,44 @@ section .gridHisopado .txtHisopado {
   visibility: visible;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+}
+
+.flexMasInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../Imagenes/imagen2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 100px;
+}
+
+.flexMasInfo h3 {
+  margin: 0;
+  color: rgba(26, 35, 136, 0.856);
+  font-size: 2.5vw;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 5px;
+}
+
+.flexMasInfo .boton {
+  width: 200px;
+  height: 3%;
+  margin-left: 50%;
+  padding: 0;
+  background-color: rgba(26, 35, 136, 0.856);
+  text-align: center;
+}
+
+.flexMasInfo .boton a {
+  padding: center;
+  margin: 0;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
