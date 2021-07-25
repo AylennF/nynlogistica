@@ -1,71 +1,74 @@
-.alineo {
-  background-color: $colorNegro;
-  animation-name: efecto_menu;
-  animation-duration: 3s;
-  animation-delay: 0;
-  animation-timing-function: ease-in;
-  display: flex;
-  justify-content: center;
+// .alineo {
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+//   background-color: $colorAzul;
+//   width: 100vw;
 
-  .nav {
-    list-style-type: none;
-    margin-top: 0px;
-    padding:0;
-    position: absolute;
+//   .nav {
+//     text-align: center;
+//     list-style-type: none;
+//     margin-top: 0px;
+//     padding:0;
+//     position: absolute;
 
-    ul {
-      list-style-type: none;
-      text-align: center;
-      align-content:center;
+//     ul {
+//       list-style-type: none;
 
-      display: none;
-      position:absolute;
-      padding:0;
-      text-align: left;
+//       display: none;
+//       position:absolute;
+//       padding:0;
+//       text-align: center;
 
-      li {
-        position: relative;
-        padding:0;
-      }
-    }
+//       li {
+//         position: relative;
+//         padding:0;
+//       }
+//     }
 
-    li {
-      a {
-        list-style-type: none;
-        color:$colorAzul;
-        text-decoration: none;
-        display: block;
-        padding: 15px;
-        font-size: 14px;
-        letter-spacing: 2px;
-        font-weight:bold;
-        font-family: $staatliches;
-      }
+//     li {
+//       a {
+//         list-style-type: none;
+//         color:$colorBlanco;
+//         text-decoration: none;
+//         display: block;
 
-      a:hover {
-        color: $colorHover;
-        display: block;
-        background-color: #b9dcf821;
-      }
+//         padding: 15px;
+//         font-size: 14px;
+//         letter-spacing: 2px;
+//         font-weight:bold;
+//         font-family: $staatliches;
+//       }
 
-    }
-  }
-}
+//       a:hover {
+//         color: $colorHover;
+//         display: block;
+//         background-color: #b9dcf821;
+//       }
 
-.nav > li {
-  float: left;
-}
+//     }
+//   }
+// }
 
-.nav li:hover > ul{
-  display:block;
-  padding:0;
-}
+// .nav > li {
+//   float: center;
+// }
+
+// .nav li:hover > ul{
+//   display:block;
+//   padding:0;
+// }
 
   .alineo {
     display: flex;
     justify-content: center;
-  
+    text-align: center;
+    
+    qw
+    
     .nav {
+      background-color: $colorAzul;
+      width: 100vw;
       list-style-type: none;
       margin-top: 0px;
       position: absolute;
@@ -79,7 +82,7 @@
       li {
         a {
           list-style-type: none;
-          color:$colorAzul;
+          color:$colorBlanco;
           text-decoration: none;
           display: block;
           padding: 15px;
@@ -116,6 +119,7 @@
   }
   
   .nav li:hover > ul{
+    background-color: $colorAzul;
     display:block;
     padding:0;
   }
