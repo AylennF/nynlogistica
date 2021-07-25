@@ -51,7 +51,7 @@
     }
 }
 
-section {
+ .infoInteres {
   #azul{
     h2 a{
     text-decoration: none;
@@ -117,7 +117,7 @@ section {
       padding:20px;
     }
   }
-}
+
 
 .gridDeclaracion { 
   display: grid;
@@ -214,3 +214,4 @@ section {
     grid-area: txtMercancia;
   }
 }
+ }

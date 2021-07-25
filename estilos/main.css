@@ -751,43 +751,43 @@
   padding: 0;
 }
 
-section #azul h2 a {
+.infoInteres #azul h2 a {
   text-decoration: none;
   color: #00094e;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
-section #azul article {
+.infoInteres #azul article {
   color: black;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
-section #azul article span {
+.infoInteres #azul article span {
   font-style: italic;
 }
 
-section #amarillo h2 a {
+.infoInteres #amarillo h2 a {
   text-decoration: none;
   color: rgba(253, 205, 142, 0.932);
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
-section #amarillo article {
+.infoInteres #amarillo article {
   color: #f0f0f0;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
-section #amarillo article span {
+.infoInteres #amarillo article span {
   font-style: italic;
 }
 
-section .gridHisopado {
+.infoInteres .gridHisopado {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "imgHisopado txtHisopado";
@@ -807,17 +807,17 @@ section .gridHisopado {
   background-color: #00094e;
 }
 
-section .gridHisopado .imgHisopado {
+.infoInteres .gridHisopado .imgHisopado {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: imgHisopado;
 }
 
-section .gridHisopado .imgHisopado img {
+.infoInteres .gridHisopado .imgHisopado img {
   width: 100%;
 }
 
-section .gridHisopado .txtHisopado {
+.infoInteres .gridHisopado .txtHisopado {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: txtHisopado;
@@ -827,7 +827,7 @@ section .gridHisopado .txtHisopado {
   padding: 20px;
 }
 
-.gridDeclaracion {
+.infoInteres .gridDeclaracion {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "txtDeclaracion imgDeclaracion";
@@ -844,17 +844,17 @@ section .gridHisopado .txtHisopado {
   background-color: rgba(253, 205, 142, 0.932);
 }
 
-.gridDeclaracion .imgDeclaracion {
+.infoInteres .gridDeclaracion .imgDeclaracion {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imgDeclaracion;
 }
 
-.gridDeclaracion .imgDeclaracion img {
+.infoInteres .gridDeclaracion .imgDeclaracion img {
   width: 100%;
 }
 
-.gridDeclaracion .txtDeclaracion {
+.infoInteres .gridDeclaracion .txtDeclaracion {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -864,7 +864,7 @@ section .gridHisopado .txtHisopado {
   grid-area: txtDeclaracion;
 }
 
-.gridApplus {
+.infoInteres .gridApplus {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "imgApplus txtApplus";
@@ -881,17 +881,17 @@ section .gridHisopado .txtHisopado {
   background-color: #00094e;
 }
 
-.gridApplus .imgApplus {
+.infoInteres .gridApplus .imgApplus {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: imgApplus;
 }
 
-.gridApplus .imgApplus img {
+.infoInteres .gridApplus .imgApplus img {
   width: 100%;
 }
 
-.gridApplus .txtApplus {
+.infoInteres .gridApplus .txtApplus {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -901,7 +901,7 @@ section .gridHisopado .txtHisopado {
   grid-area: txtApplus;
 }
 
-.gridTarifa {
+.infoInteres .gridTarifa {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "txtTarifa imgTarifa";
@@ -918,17 +918,17 @@ section .gridHisopado .txtHisopado {
   background-color: rgba(253, 205, 142, 0.932);
 }
 
-.gridTarifa .imgTarifa {
+.infoInteres .gridTarifa .imgTarifa {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imgTarifa;
 }
 
-.gridTarifa .imgTarifa img {
+.infoInteres .gridTarifa .imgTarifa img {
   width: 100%;
 }
 
-.gridTarifa .txtTarifa {
+.infoInteres .gridTarifa .txtTarifa {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -938,7 +938,7 @@ section .gridHisopado .txtHisopado {
   grid-area: txtTarifa;
 }
 
-.gridMercancia {
+.infoInteres .gridMercancia {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "imgMercancia txtMercancia";
@@ -955,17 +955,17 @@ section .gridHisopado .txtHisopado {
   background-color: #00094e;
 }
 
-.gridMercancia .imgMercancia {
+.infoInteres .gridMercancia .imgMercancia {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: imgMercancia;
 }
 
-.gridMercancia .imgMercancia img {
+.infoInteres .gridMercancia .imgMercancia img {
   width: 100%;
 }
 
-.gridMercancia .txtMercancia {
+.infoInteres .gridMercancia .txtMercancia {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1149,47 +1149,47 @@ section .gridHisopado .txtHisopado {
   background-position: center;
 }
 
-section {
+.infoServicios {
   margin: 0;
 }
 
-section #azul {
+.infoServicios #azul {
   background-color: #00094e;
 }
 
-section #azul h2 {
+.infoServicios #azul h2 {
   text-decoration: none;
   color: rgba(253, 205, 142, 0.932);
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
-section #azul article {
+.infoServicios #azul article {
   color: #f0f0f0;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
-section #amarillo {
+.infoServicios #amarillo {
   background-color: rgba(253, 205, 142, 0.932);
 }
 
-section #amarillo h2 {
+.infoServicios #amarillo h2 {
   text-decoration: none;
   color: #00094e;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
 
-section #amarillo article {
+.infoServicios #amarillo article {
   color: black;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
-section .flexServicioEspecifico {
+.infoServicios .flexServicioEspecifico {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,18 +1205,18 @@ section .flexServicioEspecifico {
   margin: 0;
 }
 
-section .flexServicioEspecifico .imagen {
+.infoServicios .flexServicioEspecifico .imagen {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-section .flexServicioEspecifico .imagen img {
+.infoServicios .flexServicioEspecifico .imagen img {
   height: 500px;
   width: 550px;
 }
 
-section .flexServicioEspecifico .text {
+.infoServicios .flexServicioEspecifico .text {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -ms-flex-item-align: center;
