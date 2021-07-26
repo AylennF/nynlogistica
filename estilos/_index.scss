@@ -363,20 +363,37 @@
         }
   }
 
-  .flexMapa{  
-    height: 300px;      
+  .flexMapa{ 
+    flex-direction: column; 
+    height: 230px;  
+    padding: auto;  
+    &__ubicacion {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin:0;
+    padding-top: 10px;
+    width: 80%;
     h2 {
       color:$colorAmarillo;
-      font-size: $h2Mobile;
+      font-size: $h3Mobile;
       font-family:$roboto;
     }
     
     article {
+      visibility: hidden;
       text-align: center;
       color:$colorBlanco;
-      font-size: 14px;
+      font-size: 0px ;
       font-family: 'Montserrat', sans-serif;
-    } 
+    }
+  }
+    &__mapa {
+      &__tam{
+        height:100%;
+        width:100%;
+      }
+    }
   } 
 }
 

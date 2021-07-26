@@ -17,17 +17,30 @@
   margin: 0;
   padding: 0;
   position: absolute;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .nav ul {
-  list-style-type: none;
-  text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  display: none;
+  position: absolute;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  padding: 0;
 }
 
 .nav li a {
   list-style-type: none;
+  text-decoration: none;
   color: #f0f0f0;
   text-decoration: none;
   display: block;
@@ -42,18 +55,6 @@
   color: #c8d6e4;
   display: block;
   background-color: #b9dcf821;
-}
-
-.nav ul {
-  display: none;
-  position: absolute;
-  padding: 0;
-  text-align: left;
-}
-
-.nav ul li {
-  position: relative;
-  padding: 0;
 }
 
 .nav > li {
@@ -80,17 +81,28 @@
     margin: 0;
     padding: 0;
     position: absolute;
+    list-style-type: none;
+    text-decoration: none;
   }
   .nav ul {
     list-style-type: none;
+    text-decoration: none;
     text-align: center;
     -ms-flex-line-pack: center;
         align-content: center;
+    display: none;
+    position: absolute;
+    padding: 0;
+    text-align: left;
+  }
+  .nav ul li {
+    position: relative;
+    padding: 0;
   }
   .nav li a {
     list-style-type: none;
-    color: #f0f0f0;
     text-decoration: none;
+    color: #f0f0f0;
     display: block;
     padding: 20px;
     font-size: 20px;
@@ -102,16 +114,6 @@
     color: #c8d6e4;
     display: block;
     background-color: #b9dcf821;
-  }
-  .nav ul {
-    display: none;
-    position: absolute;
-    padding: 0;
-    text-align: left;
-  }
-  .nav ul li {
-    position: relative;
-    padding: 0;
   }
   .nav > li {
     float: left;
@@ -643,18 +645,41 @@
     padding: 0 20px 10px 20px;
   }
   .flexMapa {
-    height: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 230px;
+    padding: auto;
   }
-  .flexMapa h2 {
+  .flexMapa__ubicacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0;
+    padding-top: 10px;
+    width: 80%;
+  }
+  .flexMapa__ubicacion h2 {
     color: rgba(253, 205, 142, 0.932);
-    font-size: 25px;
+    font-size: 15px;
     font-family: "Roboto Slab", serif;
   }
-  .flexMapa article {
+  .flexMapa__ubicacion article {
+    visibility: hidden;
     text-align: center;
     color: #f0f0f0;
-    font-size: 14px;
+    font-size: 0px;
     font-family: 'Montserrat', sans-serif;
+  }
+  .flexMapa__mapa__tam {
+    height: 100%;
+    width: 100%;
   }
 }
 
