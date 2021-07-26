@@ -68,142 +68,23 @@
 }
 
 @media (max-width: 950px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #00094e;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    list-style-type: none;
-    text-decoration: none;
-  }
-  .nav ul {
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    display: none;
-    position: absolute;
-    padding: 0;
-    text-align: left;
-  }
-  .nav ul li {
-    position: relative;
-    padding: 0;
-  }
   .nav li a {
-    list-style-type: none;
-    text-decoration: none;
-    color: #f0f0f0;
-    display: block;
     padding: 20px;
     font-size: 20px;
     letter-spacing: 2px;
-    font-weight: bold;
-    font-family: "Staatliches", cursive;
-  }
-  .nav a:hover {
-    color: #c8d6e4;
-    display: block;
-    background-color: #b9dcf821;
-  }
-  .nav > li {
-    float: left;
-  }
-  .nav li:hover > ul {
-    background-color: #00094e;
-    display: block;
-    padding: 0;
   }
 }
 
 @media (max-width: 650px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #00094e;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-  }
-  .nav ul {
-    list-style-type: none;
-    text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
   .nav li a {
-    list-style-type: none;
-    color: #f0f0f0;
-    text-decoration: none;
-    display: block;
     padding: 20px 15px;
     font-size: 15px;
     letter-spacing: 2px;
-    font-weight: bold;
-    font-family: "Staatliches", cursive;
-  }
-  .nav a:hover {
-    color: #c8d6e4;
-    display: block;
-    background-color: #b9dcf821;
-  }
-  .nav ul {
-    display: none;
-    position: absolute;
-    padding: 0;
-    text-align: left;
-  }
-  .nav ul li {
-    position: relative;
-    padding: 0;
-  }
-  .nav > li {
-    float: left;
-  }
-  .nav li:hover > ul {
-    background-color: #00094e;
-    display: block;
-    padding: 0;
   }
 }
 
 @media (max-width: 520px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #00094e;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-  }
-  .nav ul {
-    list-style-type: none;
-    text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .nav li a {
+  li a {
     list-style-type: none;
     color: #f0f0f0;
     text-decoration: none;
@@ -214,28 +95,13 @@
     font-weight: bold;
     font-family: "Staatliches", cursive;
   }
-  .nav a:hover {
-    color: #c8d6e4;
-    display: block;
-    background-color: #b9dcf821;
-  }
-  .nav ul {
-    display: none;
-    position: absolute;
-    padding: 0;
-    text-align: left;
-  }
-  .nav ul li {
-    position: relative;
-    padding: 0;
-  }
-  .nav > li {
-    float: left;
-  }
-  .nav li:hover > ul {
-    background-color: #00094e;
-    display: block;
-    padding: 0;
+}
+
+@media (max-width: 350px) {
+  .nav li a {
+    padding: 10px;
+    font-size: 5px;
+    letter-spacing: 2px;
   }
 }
 
@@ -651,6 +517,7 @@
             flex-direction: column;
     height: 230px;
     padding: auto;
+    background-color: transparent;
   }
   .flexMapa__ubicacion {
     display: -webkit-box;
@@ -666,9 +533,8 @@
     width: 80%;
   }
   .flexMapa__ubicacion h2 {
-    color: rgba(253, 205, 142, 0.932);
-    font-size: 15px;
-    font-family: "Roboto Slab", serif;
+    color: #00094e;
+    font-size: 25px;
   }
   .flexMapa__ubicacion article {
     visibility: hidden;
@@ -893,6 +759,18 @@
   }
   .flexInicialLogo__posicionamiento__exterior {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .flexInicialLogo__posicionamiento__n {
+    font-size: 30px;
+  }
+  .flexInicialLogo__posicionamiento__comercio {
+    font-size: 15px;
+  }
+  .flexInicialLogo__posicionamiento__exterior {
+    font-size: 15px;
   }
 }
 

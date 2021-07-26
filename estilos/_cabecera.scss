@@ -172,3 +172,20 @@
       }
     }
 
+    @media (max-width: 350px) {
+      .flexInicialLogo  {        
+        &__posicionamiento {
+          &__n{
+            font-size: $h2Desk;
+          }  
+          
+          &__comercio{
+            font-size: $h3Mobile;
+          }
+          
+          &__exterior{
+            font-size:$h3Mobile;
+          }
+        }
+      }
+    }

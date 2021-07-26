@@ -367,6 +367,7 @@
     flex-direction: column; 
     height: 230px;  
     padding: auto;  
+    background-color: transparent;
     &__ubicacion {
     display: flex;
     justify-content: center;
@@ -375,9 +376,8 @@
     padding-top: 10px;
     width: 80%;
     h2 {
-      color:$colorAmarillo;
-      font-size: $h3Mobile;
-      font-family:$roboto;
+      color:$colorAzul;
+      font-size: $h2Mobile;
     }
     
     article {
