@@ -154,4 +154,21 @@
       }
     }
       
+    @media (max-width: 750px) {
+      .flexInicialLogo  {        
+        &__posicionamiento {
+          &__n{
+            font-size: $nTablet;
+          }  
+          
+          &__comercio{
+            font-size: $comercioTablet;
+          }
+          
+          &__exterior{
+            font-size:$exteriorTablet;
+          }
+        }
+      }
+    }
 

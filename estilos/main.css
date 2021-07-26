@@ -180,6 +180,63 @@
   }
 }
 
+@media (max-width: 520px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #00094e;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+  .nav ul {
+    list-style-type: none;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .nav li a {
+    list-style-type: none;
+    color: #f0f0f0;
+    text-decoration: none;
+    display: block;
+    padding: 20px 15px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "Staatliches", cursive;
+  }
+  .nav a:hover {
+    color: #c8d6e4;
+    display: block;
+    background-color: #b9dcf821;
+  }
+  .nav ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    text-align: left;
+  }
+  .nav ul li {
+    position: relative;
+    padding: 0;
+  }
+  .nav > li {
+    float: left;
+  }
+  .nav li:hover > ul {
+    background-color: #00094e;
+    display: block;
+    padding: 0;
+  }
+}
+
 .flexQuienesSomos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,6 +859,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 750px) {
+  .flexInicialLogo__posicionamiento__n {
+    font-size: 70px;
+  }
+  .flexInicialLogo__posicionamiento__comercio {
+    font-size: 30px;
+  }
+  .flexInicialLogo__posicionamiento__exterior {
+    font-size: 40px;
+  }
+}
+
 .footer {
   background-color: black;
   margin: 0px;
@@ -871,6 +940,72 @@
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .footer {
+    background-color: black;
+    margin: 0px;
+  }
+  .footer__grid {
+    color: #f0f0f0;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "Logo LineaFooter";
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+    -ms-grid-columns: 0.3fr 1.7fr;
+        grid-template-columns: 0.3fr 1.7fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+  .footer__grid__logo {
+    padding-top: 17px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: Logo;
+    text-align: center;
+    border-right: dashed 1px rgba(255, 255, 255, 0.548);
+  }
+  .footer__grid__logo__n {
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    color: #f0f0f0;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  .footer__grid__logo__anpersand {
+    font-size: 13px;
+    font-weight: light;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+  }
+  .footer__grid__logo__comercio {
+    font-size: 10px;
+    font-weight: light;
+    color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  .footer__grid__linea {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: LineaFooter;
+    text-align: center;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  .footer__grid__linea a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
 }
 
 .sectionContacto {

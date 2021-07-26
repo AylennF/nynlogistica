@@ -23,18 +23,19 @@ $paddingMobile:12px;
 $h2Mobile:25px;
 $h3Mobile:15px;
 $articleMobile:10px;
-$nFooter:22px;
+$nFooterMobile:18px;
   $anpersandFMobile:13px;
   $comercioFMobile:14px;
   $textoFooter:14px;
 
+
 //TABLET
 $fsTablet:14px;
 $paddingTablet:12px;
-  $nTablet:70px;
-  $andpersandTablet:40px;
-  $comercioTablet:30px;
-  $exteriorTablet:40px;
+$nTablet:70px;
+$andpersandTablet:40px;
+$comercioTablet:30px;
+$exteriorTablet:40px;
 $h2Tablet:25px;
 $h3Tablet:20px;
 $articleTablet:17px;
@@ -53,9 +54,13 @@ $h4Desk:20px;
 $articleDesk:20px;
 $articleADesk:20px;
 $btnTam:16px;
+$nFooter:22px;
+  $anpersandFMobile:13px;
+  $comercioFMobile:14px;
+  $textoFooter:14px;
 
-  #fondo {
-      background-color:$colorbg;
+#fondo {
+  background-color:$colorbg;
       margin:0;
       padding:0;
     }
