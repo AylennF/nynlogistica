@@ -1,4 +1,5 @@
   .nav {
+    transition: all 0.4s;
     display: flex;
     width: 100%;
     text-align: center;
@@ -15,10 +16,12 @@
       display: none;
       position:absolute;
       padding:0;
+      transition: all 0.4s;
       list-style-type: none;
       text-decoration: none;
 
       li {
+        transition: all 0.4s;
         list-style-type: none;
         text-decoration: none;
         position: relative;
@@ -37,22 +40,26 @@
         font-size: 20px;
         letter-spacing: 2px;
         font-weight:bold;
+        transition: all 0.4s; 
         font-family: $staatliches;
       }
     }
 
     a:hover {
+      transition: all 0.4s;
       color: $colorHover;
       display: block;
-      background-color: #b9dcf821;
+      background-color: #b9dcf836;
     }
   }
 
   .nav > li {
+    transition: all 0.4s;
     float: left;
   }
   
   .nav li:hover > ul{
+    transition: all 0.4s;
     background-color: $colorAzul;
     display:block;
     padding:0;
@@ -99,12 +106,12 @@
       }
   }
 
-  @media (max-width: 350px) {
+  @media (max-width: 470px) {
     .nav {  
       li {
         a {
           padding: 10px;
-          font-size: 5px;
+          font-size: 10px;
           letter-spacing: 2px;
         }
       }
