@@ -175,6 +175,7 @@
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  margin: 15px;
 }
 
 .flexInfo__1 {
@@ -911,6 +912,10 @@
   }
 }
 
+html {
+  width: auto;
+}
+
 .sectionContacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -975,7 +980,7 @@
 .flexContacto {
   height: 70vh;
   padding: 0 3%;
-  background-color: rgba(253, 205, 142, 0.932);
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,17 +1000,28 @@
 }
 
 .flexContacto h3 {
+  font-weight: 500;
   margin-top: 1vh;
-  color: black;
+  color: #041491;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
+}
+
+.flexContacto h3 span {
+  font-weight: bold;
 }
 
 .flexContacto h4 {
   color: black;
   font-size: 17px;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 2px;
+  padding: 0;
+  margin: 22px 0 5px 0;
+}
+
+.flexContacto h4 i {
+  color: #aaa6a6;
 }
 
 .flexContacto article {
@@ -1014,7 +1030,10 @@
   font-weight: light;
   font-family: "Roboto Slab", serif;
   text-align: center;
-  margin-bottom: 4px;
+}
+
+.flexContacto article i {
+  color: #aaa6a6;
 }
 
 .flexContacto article a {
@@ -1023,6 +1042,7 @@
   font-size: 17px;
   font-weight: normal;
   font-family: "Roboto Slab", serif;
+  padding-bottom: 2px;
   text-align: center;
 }
 
@@ -1034,8 +1054,8 @@
 }
 
 .flexContacto #andres {
-  -webkit-transition: height 0.4s ease-out;
-  transition: height 0.4s ease-out;
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
 }
 
 .flexContacto #andres img {
@@ -1109,14 +1129,19 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: rgba(233, 236, 245, 0.863);
+  background-image: url("../Imagenes/fondoVertical.jpg");
   border-style: solid;
-  border-width: 0.5px;
-  border-color: rgba(134, 155, 248, 0.13);
+  border-width: 1px;
+  border-color: #eeeeee;
 }
 
 .flexContacto .tarjeta .contenido, .flexContacto #andres .contenido, .flexContacto #florencia .contenido {
-  padding-top: 25px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.flexContacto .tarjeta .contenido900px, .flexContacto #andres .contenido900px, .flexContacto #florencia .contenido900px {
+  height: 0px;
   visibility: hidden;
 }
 
@@ -1153,6 +1178,7 @@
             flex-direction: column;
   }
   .flexContacto #andres {
+    padding-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1167,6 +1193,10 @@
     transition: height 0.4s ease-out;
   }
   .flexContacto #andres .contenido {
+    height: 0;
+    width: 0;
+  }
+  .flexContacto #andres .contenido900px {
     height: 0;
     width: 0;
   }
@@ -1185,7 +1215,6 @@
     padding: 10px;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
-    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1194,25 +1223,36 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .flexContacto #andres:hover {
-    height: 250px;
+    height: 230px;
     width: 470px;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
   .flexContacto #andres:hover .contenido {
+    visibility: hidden;
+  }
+  .flexContacto #andres:hover .contenido900px {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding-top: 10%;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     visibility: visible;
     -webkit-animation: efecto_menu 1.2s;
             animation: efecto_menu 1.2s;
+  }
+  .flexContacto #andres:hover .andres900px {
+    width: 150px;
+    padding: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
   }
   .flexContacto #andres:hover img {
     margin: 0px;
@@ -1224,14 +1264,8 @@
     -webkit-transition: height 0.4s ease-in-out;
     transition: height 0.4s ease-in-out;
   }
-  .flexContacto #andres:hover .andres900px {
-    width: 150px;
-    padding: 10px;
-    -webkit-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
-    background-color: rgba(0, 9, 78, 0.226);
-  }
   .flexContacto #florencia {
+    padding-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1246,6 +1280,10 @@
     transition: height 0.4s ease-out;
   }
   .flexContacto #florencia .contenido {
+    height: 0;
+    width: 0;
+  }
+  .flexContacto #florencia .contenido900px {
     height: 0;
     width: 0;
   }
@@ -1264,7 +1302,6 @@
     padding: 10px;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
-    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1273,18 +1310,22 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .flexContacto #florencia:hover {
-    height: 250px;
+    height: 230px;
     width: 470px;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
   .flexContacto #florencia:hover .contenido {
+    visibility: hidden;
+  }
+  .flexContacto #florencia:hover .contenido900px {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding-top: 10%;
     -ms-grid-column-align: center;
         justify-self: center;
     -webkit-transition: all 1s ease-in-out;
@@ -1292,6 +1333,15 @@
     visibility: visible;
     -webkit-animation: efecto_menu 1.2s;
             animation: efecto_menu 1.2s;
+  }
+  .flexContacto #florencia:hover .florencia900px {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 150px;
+    padding: 10px 0 10px 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
   }
   .flexContacto #florencia:hover img {
     margin: 0px;
@@ -1303,20 +1353,50 @@
     -webkit-transition: height 0.4s ease-in-out;
     transition: height 0.4s ease-in-out;
   }
-  .flexContacto #florencia:hover .florencia900px {
-    width: 150px;
-    padding: 10px;
-    -webkit-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
-    background-color: rgba(0, 9, 78, 0.226);
-  }
   .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
-    height: 250px;
+    background-image: url("../Imagenes/fondoHorizontal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
     width: 470px;
   }
   .flexContacto .tarjeta .contenido, .flexContacto #andres .contenido, .flexContacto #florencia .contenido {
-    padding-top: 25px;
     visibility: hidden;
+    height: 0;
+  }
+  .flexContacto .tarjeta .contenido900px, .flexContacto #andres .contenido900px, .flexContacto #florencia .contenido900px {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 17px;
+    visibility: hidden;
+    height: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flexContacto .tarjeta .contenido900px article, .flexContacto #andres .contenido900px article, .flexContacto #florencia .contenido900px article {
+    color: #00094e;
+    font-size: 17px;
+    font-weight: light;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    padding: 4px;
+  }
+  .flexContacto .tarjeta .contenido900px article i, .flexContacto #andres .contenido900px article i, .flexContacto #florencia .contenido900px article i {
+    color: #aaa6a6;
+  }
+  .flexContacto .tarjeta .contenido900px article a, .flexContacto #andres .contenido900px article a, .flexContacto #florencia .contenido900px article a {
+    color: #00094e;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
   }
   .flexContacto .tarjeta img, .flexContacto #andres img, .flexContacto #florencia img {
     height: 100px;
