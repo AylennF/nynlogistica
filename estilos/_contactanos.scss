@@ -6,6 +6,7 @@
     
     .divContacto {
       display: flex;
+
       flex-direction: column;
       grid-area: divContacto;
       font-weight:light;
@@ -54,15 +55,12 @@
 }
   
   .flexContacto {
-    grid-area: divInfo;
-    height: 100vh;
+    height: 70vh;
+    padding:0 3%;
+    background-color: $colorAmarillo;
     display: flex;
-    flex-direction: column;
-    background-image: url("../Imagenes/camiones2.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
     
     h1 {
@@ -75,77 +73,96 @@
       margin-top:1vh;
       color:$colorNegro;
       font-size: $h3Desk;
-      font-family:$roboto;
+      font-family:$monserrat;
     }
 
     h4 {
         color:$colorNegro;
-        font-size: $h4Desk;
+        font-size:  17px;
         font-family:$monserrat;
         margin-bottom: 2px;
       }
 
     article {
-      color:$colorAzulRGBA;
-      font-size:$articleDesk;
+      color:$colorAzul;
+      font-size: 17px;
       font-weight:light;
-      font-family: $monserrat;
+      font-family: $roboto;
       text-align: center;
       margin-bottom: 4px;
 
       a{
-        color:$colorAzulRGBA;
+        color:$colorAzul;
         text-decoration: none;
-        font-size:$articleADesk;
-        font-weight:bold;
-        font-family: $monserrat;
+        font-size: 17px;
+        font-weight:normal;
+        font-family: $roboto;
         text-align: center;
       }
     }
 
     #titulo {
-      grid-area: info;
       text-align: center;
+      justify-content: center;
     }
 
     #andres {
       @extend .tarjeta;
       transition: height 0.4s ease-out;
+
+      img{
+      transition: height 0.4s ease-in-out;
+      }
     }
     
     #andres:hover {
+      height:420px;
+      align-content: center;
       background-color:$colorBlanco;   
-      height: 200px;
-      transition: all 0.4s ease-in-out;
+      transition: all 0.7s ease-in-out;
+
       .contenido{
+        transition: all 1s ease-in-out;
         visibility: visible;
         transition-delay: 0.3s;
       }
       
-      h1{
-        margin-bottom: 0;
+      img {
+        height: 100px;
+        margin:5px;
       }
     }
 
     #florencia {
       @extend .tarjeta;
       transition: height 0.4s ease-in-out;
+      img{
+        transition: height 0.4s ease-in-out;
+        }
     }
 
     #florencia:hover {
-      background-image: none;
-      background-color: $colorBlanco;   
-      height: 200px;
-      transition: all 0.4s ease-in-out;
-      
+      height:420px;
+      align-content: center;
+      background-color:$colorBlanco;   
+      transition: all 0.7s ease-in-out;
+
       .contenido{
+        transition: all 1s ease-in-out;
         visibility: visible;
         transition-delay: 0.3s;
       }
+      
+      img {
+        height: 100px;
+        margin:5px;
+      } 
     }
+
     .tarjeta {
-      height:60px;
-      width: 50vw;
+      box-shadow: rgb(151, 148, 148) 2px 3px 4px; 
+      height:300px;
+      width: 350px;
       position: relative;
       justify-content: center;
       align-self: center;
@@ -156,7 +173,19 @@
       border-color: rgba(134, 155, 248, 0.13);
     
       .contenido {
+        padding-top: 25px;
         visibility: hidden;
+      }
+
+      img {
+        visibility: visible;
+        margin: 20px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(255, 255, 255);
+        box-shadow: rgb(90, 87, 87) 1px 4px 4px; 
+        height:170px;
       }
     }
   }
@@ -170,3 +199,148 @@
   font-family:$monserrat;
 }
 
+@media (max-width: 900px) {
+  
+  .flexContacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    #andres {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      transition: height 0.4s ease-out;
+
+      .contenido {
+        height: 0;
+        width: 0;
+      }
+      img{
+        margin-bottom: 7px;
+        align-self: center;
+        height: 100px;
+        width: 100px;
+        transition: height 0.4s ease-in-out;
+      }
+
+      .andres900px{
+        width: 100%;
+        padding: 10px;
+        transition: all 0.7s ease-in-out;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    
+    #andres:hover {
+      height:250px;
+      width: 470px;
+      transition: all 1s ease-in-out;
+
+      .contenido{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding-top: 10%;
+        justify-self: center;
+        transition: all 1s ease-in-out;
+        visibility: visible;
+        animation: efecto_menu 1.2s;
+      }
+
+      img {
+        margin: 0px;
+        align-self: center;
+        height: 100px;
+        width: 100px;
+        transition: height 0.4s ease-in-out;
+      }
+
+      .andres900px{
+        width: 150px;
+        padding: 10px;
+        transition: all 0.7s ease-in-out;
+        background-color: rgba(0, 9, 78, 0.226);
+      }  
+    }
+
+    #florencia {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      transition: height 0.4s ease-out;
+
+      .contenido {
+        height: 0;
+        width: 0;
+      }
+      img{
+        margin-bottom: 7px;
+        align-self: center;
+        height: 100px;
+        width: 100px;
+        transition: height 0.4s ease-in-out;
+      }
+
+      .florencia900px{
+        width: 100%;
+        padding: 10px;
+        transition: all 0.7s ease-in-out;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    
+    #florencia:hover {
+      height:250px;
+      width: 470px;
+      transition: all 1s ease-in-out;
+
+      .contenido{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding-top: 10%;
+        justify-self: center;
+        transition: all 1s ease-in-out;
+        visibility: visible;
+        animation: efecto_menu 1.2s;
+      }
+
+      img {
+        margin: 0px;
+        align-self: center;
+        height: 100px;
+        width: 100px;
+        transition: height 0.4s ease-in-out;
+      }
+
+      .florencia900px{
+        width: 150px;
+        padding: 10px;
+        transition: all 0.7s ease-in-out;
+        background-color: rgba(0, 9, 78, 0.226);
+      }  
+    }
+
+
+    .tarjeta {
+      height:250px;
+      width: 470px;
+
+      .contenido {
+        padding-top: 25px;
+        visibility: hidden;
+      }
+
+      img {
+        height:100px;
+      }
+    }
+  } 
+}

@@ -973,21 +973,18 @@
 }
 
 .flexContacto {
-  grid-area: divInfo;
-  height: 100vh;
+  height: 70vh;
+  padding: 0 3%;
+  background-color: rgba(253, 205, 142, 0.932);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url("../Imagenes/camiones2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 
@@ -1001,37 +998,39 @@
   margin-top: 1vh;
   color: black;
   font-size: 25px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .flexContacto h4 {
   color: black;
-  font-size: 20px;
+  font-size: 17px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 2px;
 }
 
 .flexContacto article {
-  color: rgba(0, 9, 78, 0.425);
-  font-size: 20px;
+  color: #00094e;
+  font-size: 17px;
   font-weight: light;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   text-align: center;
   margin-bottom: 4px;
 }
 
 .flexContacto article a {
-  color: rgba(0, 9, 78, 0.425);
+  color: #00094e;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: "Roboto Slab", serif;
   text-align: center;
 }
 
 .flexContacto #titulo {
-  grid-area: info;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flexContacto #andres {
@@ -1039,21 +1038,31 @@
   transition: height 0.4s ease-out;
 }
 
+.flexContacto #andres img {
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
+}
+
 .flexContacto #andres:hover {
+  height: 420px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #f0f0f0;
-  height: 200px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .flexContacto #andres:hover .contenido {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   visibility: visible;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-.flexContacto #andres:hover h1 {
-  margin-bottom: 0;
+.flexContacto #andres:hover img {
+  height: 100px;
+  margin: 5px;
 }
 
 .flexContacto #florencia {
@@ -1061,23 +1070,38 @@
   transition: height 0.4s ease-in-out;
 }
 
+.flexContacto #florencia img {
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
+}
+
 .flexContacto #florencia:hover {
-  background-image: none;
+  height: 420px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #f0f0f0;
-  height: 200px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .flexContacto #florencia:hover .contenido {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   visibility: visible;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
+.flexContacto #florencia:hover img {
+  height: 100px;
+  margin: 5px;
+}
+
 .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
-  height: 60px;
-  width: 50vw;
+  -webkit-box-shadow: #979494 2px 3px 4px;
+          box-shadow: #979494 2px 3px 4px;
+  height: 300px;
+  width: 350px;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1092,7 +1116,20 @@
 }
 
 .flexContacto .tarjeta .contenido, .flexContacto #andres .contenido, .flexContacto #florencia .contenido {
+  padding-top: 25px;
   visibility: hidden;
+}
+
+.flexContacto .tarjeta img, .flexContacto #andres img, .flexContacto #florencia img {
+  visibility: visible;
+  margin: 20px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  -webkit-box-shadow: #5a5757 1px 4px 4px;
+          box-shadow: #5a5757 1px 4px 4px;
+  height: 170px;
 }
 
 .estiloForm, .sectionContacto .divContacto input, .sectionContacto .divContacto textarea {
@@ -1102,6 +1139,188 @@
   border-width: 0.5px;
   border-color: rgba(255, 255, 255, 0.596);
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .flexContacto {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexContacto #andres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: height 0.4s ease-out;
+    transition: height 0.4s ease-out;
+  }
+  .flexContacto #andres .contenido {
+    height: 0;
+    width: 0;
+  }
+  .flexContacto #andres img {
+    margin-bottom: 7px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 100px;
+    width: 100px;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+  }
+  .flexContacto #andres .andres900px {
+    width: 100%;
+    padding: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .flexContacto #andres:hover {
+    height: 250px;
+    width: 470px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .flexContacto #andres:hover .contenido {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 10%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    -webkit-animation: efecto_menu 1.2s;
+            animation: efecto_menu 1.2s;
+  }
+  .flexContacto #andres:hover img {
+    margin: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 100px;
+    width: 100px;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+  }
+  .flexContacto #andres:hover .andres900px {
+    width: 150px;
+    padding: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    background-color: rgba(0, 9, 78, 0.226);
+  }
+  .flexContacto #florencia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: height 0.4s ease-out;
+    transition: height 0.4s ease-out;
+  }
+  .flexContacto #florencia .contenido {
+    height: 0;
+    width: 0;
+  }
+  .flexContacto #florencia img {
+    margin-bottom: 7px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 100px;
+    width: 100px;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+  }
+  .flexContacto #florencia .florencia900px {
+    width: 100%;
+    padding: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .flexContacto #florencia:hover {
+    height: 250px;
+    width: 470px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .flexContacto #florencia:hover .contenido {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 10%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    visibility: visible;
+    -webkit-animation: efecto_menu 1.2s;
+            animation: efecto_menu 1.2s;
+  }
+  .flexContacto #florencia:hover img {
+    margin: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 100px;
+    width: 100px;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+  }
+  .flexContacto #florencia:hover .florencia900px {
+    width: 150px;
+    padding: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    background-color: rgba(0, 9, 78, 0.226);
+  }
+  .flexContacto .tarjeta, .flexContacto #andres, .flexContacto #florencia {
+    height: 250px;
+    width: 470px;
+  }
+  .flexContacto .tarjeta .contenido, .flexContacto #andres .contenido, .flexContacto #florencia .contenido {
+    padding-top: 25px;
+    visibility: hidden;
+  }
+  .flexContacto .tarjeta img, .flexContacto #andres img, .flexContacto #florencia img {
+    height: 100px;
+  }
 }
 
 @-webkit-keyframes efecto_cabecera {
