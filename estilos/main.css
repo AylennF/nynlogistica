@@ -2,6 +2,7 @@
   background-color: rgba(170, 178, 192, 0.705);
   margin: 0;
   padding: 0;
+  width: auto;
 }
 
 .nav {
@@ -1239,9 +1240,6 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     visibility: visible;
