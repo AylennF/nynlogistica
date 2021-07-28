@@ -1,5 +1,5 @@
 .footer {
-    background-color:$colorNegro;
+    background-color:$colorNegroFooter;
     margin:0px;
 
     &__grid {
@@ -69,7 +69,7 @@
 
 @media (max-width: 750px) {
     .footer {
-        background-color:$colorNegro;
+        background-color:$colorNegroFooter;
         margin:0px;
     
         &__grid {

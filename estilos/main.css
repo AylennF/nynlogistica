@@ -16,7 +16,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #00094e;
+  background-color: #043191;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -65,7 +65,7 @@
   transition: all 0.4s;
   color: #c8d6e4;
   display: block;
-  background-color: #b9dcf836;
+  background-color: #b1c4d436;
 }
 
 .nav > li {
@@ -77,7 +77,7 @@
 .nav li:hover > ul {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #00094e;
+  background-color: #043191;
   display: block;
   padding: 0;
 }
@@ -131,7 +131,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #00094e;
+  background-color: #043191;
   padding: 0;
 }
 
@@ -143,7 +143,7 @@
 }
 
 .flexQuienesSomos h2 {
-  color: rgba(253, 205, 142, 0.932);
+  color: rgba(253, 200, 131, 0.932);
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
@@ -179,7 +179,7 @@
 .flexInfo h3 {
   padding: 0 0 10px 0;
   margin: 0;
-  color: rgba(253, 205, 142, 0.932);
+  color: rgba(253, 200, 131, 0.932);
   font-size: 25px;
   font-family: "Roboto Slab", serif;
   text-align: center;
@@ -207,7 +207,7 @@
   height: 300px;
   width: 400px;
   margin: 50px;
-  background-color: #00094e;
+  background-color: #043191;
   padding: 30px;
 }
 
@@ -225,7 +225,7 @@
   height: 300px;
   margin: 50px;
   width: 400px;
-  background-color: #00094e;
+  background-color: #043191;
   padding: 30px;
 }
 
@@ -239,7 +239,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .flexMapa__ubicacion {
@@ -259,7 +259,7 @@
 }
 
 .flexMapa__ubicacion h2 {
-  color: rgba(253, 205, 142, 0.932);
+  color: rgba(253, 200, 131, 0.932);
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
@@ -287,7 +287,7 @@
   .flexInfo h3 {
     padding: 0 0 10px 0;
     margin: 0;
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 25px;
     font-family: "Roboto Slab", serif;
     text-align: center;
@@ -305,7 +305,7 @@
     text-align: justify;
   }
   .flexQuienesSomos h2 {
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 25px;
     font-family: "Roboto Slab", serif;
   }
@@ -322,7 +322,7 @@
     height: 300px;
   }
   .flexMapa h2 {
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 25px;
     font-family: "Roboto Slab", serif;
   }
@@ -345,7 +345,7 @@
   .flexInfo h3 {
     padding: 0 0 10px 0;
     margin: 0;
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 20px;
     font-family: "Roboto Slab", serif;
     text-align: center;
@@ -363,7 +363,7 @@
     text-align: justify;
   }
   .flexQuienesSomos h2 {
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 20px;
     font-family: "Roboto Slab", serif;
   }
@@ -385,7 +385,7 @@
   .flexInfo h3 {
     padding: 0 0 10px 0;
     margin: 0;
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 20px;
     font-family: "Roboto Slab", serif;
     text-align: center;
@@ -410,7 +410,7 @@
     height: 200px;
     width: 400px;
     margin: 50px;
-    background-color: #00094e;
+    background-color: #043191;
     padding: 30px;
   }
   .flexInfo__2 {
@@ -427,7 +427,7 @@
     height: 200px;
     margin: 50px;
     width: 400px;
-    background-color: #00094e;
+    background-color: #043191;
     padding: 30px;
   }
   .flexQuienesSomos article {
@@ -437,7 +437,7 @@
     text-align: justify;
   }
   .flexQuienesSomos h2 {
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 20px;
     font-family: "Roboto Slab", serif;
   }
@@ -484,7 +484,7 @@
             justify-content: center;
     height: 250px;
     width: 80%;
-    background-color: #00094e;
+    background-color: #043191;
     padding: 10px;
   }
   .flexInfo__2 {
@@ -500,7 +500,7 @@
             justify-content: center;
     height: 250px;
     width: 80%;
-    background-color: #00094e;
+    background-color: #043191;
     padding: 10px;
   }
   .flexQuienesSomos {
@@ -513,7 +513,7 @@
     text-align: justify;
   }
   .flexQuienesSomos h2 {
-    color: rgba(253, 205, 142, 0.932);
+    color: rgba(253, 200, 131, 0.932);
     font-size: 20px;
     font-family: "Roboto Slab", serif;
   }
@@ -549,7 +549,7 @@
     width: 80%;
   }
   .flexMapa__ubicacion h2 {
-    color: #00094e;
+    color: #043191;
     font-size: 25px;
   }
   .flexMapa__ubicacion article {
@@ -657,6 +657,7 @@
 .flexInicial__posicionamiento__textoGrande {
   font-size: 50px;
   font-family: "Roboto Slab", serif;
+  font-weight: bolder;
   color: #020752;
   padding: 0px;
   margin: 0px;
@@ -762,7 +763,7 @@
 }
 
 .footer {
-  background-color: black;
+  background-color: #111111;
   margin: 0px;
 }
 
@@ -834,7 +835,7 @@
 
 @media (max-width: 750px) {
   .footer {
-    background-color: black;
+    background-color: #111111;
     margin: 0px;
   }
   .footer__grid {
@@ -906,7 +907,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .sectionContacto .divContacto {
@@ -948,8 +949,7 @@
 
 .sectionContacto .divContacto h2 {
   text-align: center;
-  padding-right: 40px;
-  color: #00094e;
+  color: #043191;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
@@ -962,7 +962,7 @@
 .flexContacto {
   height: 70vh;
   padding: 0 3%;
-  background-color: white;
+  background-color: #e6ebf0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,7 +976,7 @@
 }
 
 .flexContacto h1 {
-  color: #00094e;
+  color: #043191;
   font-size: 40px;
   font-family: "Roboto Slab", serif;
 }
@@ -1007,7 +1007,7 @@
 }
 
 .flexContacto article {
-  color: #00094e;
+  color: #043191;
   font-size: 17px;
   font-weight: light;
   font-family: "Roboto Slab", serif;
@@ -1019,7 +1019,7 @@
 }
 
 .flexContacto article a {
-  color: #00094e;
+  color: #043191;
   text-decoration: none;
   font-size: 17px;
   font-weight: normal;
@@ -1357,7 +1357,7 @@
             justify-content: center;
   }
   .flexContacto .tarjeta .contenido900px article, .flexContacto #andres .contenido900px article, .flexContacto #florencia .contenido900px article {
-    color: #00094e;
+    color: #043191;
     font-size: 17px;
     font-weight: light;
     font-family: "Roboto Slab", serif;
@@ -1368,7 +1368,7 @@
     color: #aaa6a6;
   }
   .flexContacto .tarjeta .contenido900px article a, .flexContacto #andres .contenido900px article a, .flexContacto #florencia .contenido900px article a {
-    color: #00094e;
+    color: #043191;
     text-decoration: none;
     font-size: 17px;
     font-weight: normal;
@@ -1657,7 +1657,7 @@
 
 .infoInteres #azul h2 a {
   text-decoration: none;
-  color: #00094e;
+  color: #043191;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
@@ -1675,7 +1675,7 @@
 
 .infoInteres #amarillo h2 a {
   text-decoration: none;
-  color: rgba(253, 205, 142, 0.932);
+  color: rgba(253, 200, 131, 0.932);
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
@@ -1708,7 +1708,7 @@
   row-gap: 0;
   padding: 0;
   margin: 0;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .infoInteres .gridHisopado .imgHisopado {
@@ -1745,7 +1745,7 @@
       grid-template-columns: 1fr 1fr;
   padding: 0;
   margin: 0;
-  background-color: rgba(253, 205, 142, 0.932);
+  background-color: rgba(253, 200, 131, 0.932);
 }
 
 .infoInteres .gridDeclaracion .imgDeclaracion {
@@ -1782,7 +1782,7 @@
       grid-template-columns: 1fr 1fr;
   padding: 0;
   margin: 0;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .infoInteres .gridApplus .imgApplus {
@@ -1819,7 +1819,7 @@
       grid-template-columns: 1fr 1fr;
   padding: 0;
   margin: 0;
-  background-color: rgba(253, 205, 142, 0.932);
+  background-color: rgba(253, 200, 131, 0.932);
 }
 
 .infoInteres .gridTarifa .imgTarifa {
@@ -1856,7 +1856,7 @@
       grid-template-columns: 1fr 1fr;
   padding: 0;
   margin: 0;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .infoInteres .gridMercancia .imgMercancia {
@@ -1893,7 +1893,7 @@
   text-align: center;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .flexFaq h3 {
@@ -1961,7 +1961,7 @@
 
 .flexMasInfo h3 {
   margin: 0;
-  color: #00094e;
+  color: #043191;
   font-size: 40px;
   font-family: "Staatliches", cursive;
   letter-spacing: 5px;
@@ -1972,7 +1972,7 @@
   height: 3%;
   margin-left: 50%;
   padding: 0;
-  background-color: #00094e;
+  background-color: #043191;
   text-align: center;
 }
 
@@ -1999,7 +1999,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .flexServicio h2 {
@@ -2058,12 +2058,12 @@
 }
 
 .infoServicios #azul {
-  background-color: #00094e;
+  background-color: #043191;
 }
 
 .infoServicios #azul h2 {
   text-decoration: none;
-  color: rgba(253, 205, 142, 0.932);
+  color: rgba(253, 200, 131, 0.932);
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
@@ -2076,12 +2076,12 @@
 }
 
 .infoServicios #amarillo {
-  background-color: rgba(253, 205, 142, 0.932);
+  background-color: rgba(253, 200, 131, 0.932);
 }
 
 .infoServicios #amarillo h2 {
   text-decoration: none;
-  color: #00094e;
+  color: #043191;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }

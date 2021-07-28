@@ -16,7 +16,7 @@
       &__n{
         font-size: $nDesk;
         font-family:$roboto;
-        color:rgb(2, 7, 82);
+        color:$colorAzulTitulos;
         padding: 0px;
         margin:0px;
       }  
@@ -61,7 +61,8 @@
         &__textoGrande{
           font-size: $textoGrandeDesk;
           font-family:$roboto;
-          color:rgb(2, 7, 82);
+          font-weight: bolder;
+          color:$colorAzulTitulos;
           padding: 0px;
           margin:0px;
         }  
@@ -72,7 +73,6 @@
           font-weight:light;
           font-family:$monserrat;
         }
-        
       }
     }
   
@@ -94,7 +94,7 @@
           &__n{
             font-size: $nDesk;
             font-family:$roboto;
-            color:rgb(2, 7, 82);
+            color:$colorAzulTitulos;
             padding: 0px;
             margin:0px;
           }  
