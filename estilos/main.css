@@ -2025,17 +2025,6 @@
   font-size: 55px;
 }
 
-.flexServicio .servicio .contenidoServicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  visibility: hidden;
-}
-
 .estiloServicio, .flexServicio .servicio {
   height: 210px;
   width: 325px;
@@ -2136,5 +2125,93 @@
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  .flexServicio {
+    padding: 30px 15px;
+  }
+  .flexServicio .servicio {
+    height: 110px;
+    width: 325px;
+    margin: 15px;
+    padding-top: 40px;
+  }
+  .flexServicio .servicio h2 {
+    font-size: 20px;
+  }
+  .flexServicio .servicio i {
+    font-size: 35px;
+  }
+  .infoServicios {
+    margin: 0;
+  }
+  .infoServicios #azul h2 {
+    font-size: 30px;
+  }
+  .infoServicios #azul article {
+    font-size: 17px;
+  }
+  .infoServicios #amarillo {
+    background-color: rgba(253, 200, 131, 0.932);
+  }
+  .infoServicios #amarillo h2 {
+    font-size: 30px;
+  }
+  .infoServicios #amarillo article {
+    font-size: 17px;
+  }
+  .infoServicios .flexServicioEspecifico {
+    padding: 0;
+    margin: 0;
+  }
+  .infoServicios .flexServicioEspecifico .imagen {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 100%;
+    margin: 0;
+  }
+  .infoServicios .flexServicioEspecifico .imagen img {
+    height: 300px;
+    width: 350px;
+  }
+  .infoServicios .flexServicioEspecifico .text {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 10px;
+  }
+}
+
+.infoServicios {
+  margin: 0;
+}
+
+.infoServicios #azul h2 {
+  font-size: 25px;
+}
+
+.infoServicios #azul article {
+  font-size: 14px;
+}
+
+.infoServicios #amarillo h2 {
+  font-size: 25px;
+}
+
+.infoServicios #amarillo article {
+  font-size: 14px;
+}
+
+.infoServicios .flexServicioEspecifico .imagen img {
+  height: 250px;
+  width: 300px;
+}
+
+.infoServicios .flexServicioEspecifico .text {
+  padding: 12px;
 }
 /*# sourceMappingURL=main.css.map */
