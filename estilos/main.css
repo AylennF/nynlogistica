@@ -1879,6 +1879,140 @@
   grid-area: txtMercancia;
 }
 
+@media (max-width: 935px) {
+  .infoInteres #azul h2 a {
+    font-size: 25px;
+  }
+  .infoInteres #azul article {
+    font-size: 17px;
+  }
+  .infoInteres #amarillo h2 a {
+    font-size: 25px;
+  }
+  .infoInteres #amarillo article {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 780px) {
+  .infoInteres #azul h2 a {
+    font-size: 18px;
+  }
+  .infoInteres #azul article {
+    font-size: 14px;
+  }
+  .infoInteres #amarillo h2 a {
+    font-size: 18px;
+  }
+  .infoInteres #amarillo article {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 680px) {
+  .infoInteres #azul h2 a {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .infoInteres #azul article {
+    font-size: 10px;
+  }
+  .infoInteres #amarillo h2 a {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .infoInteres #amarillo article {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 570px) {
+  .infoInteres #azul h2 a {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .infoInteres #azul article {
+    font-size: 10px;
+  }
+  .infoInteres #amarillo h2 a {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .infoInteres #amarillo article {
+    font-size: 10px;
+  }
+  .infoInteres .gridHisopado {
+    -ms-grid-columns: 0fr 2fr;
+        grid-template-columns: 0fr 2fr;
+  }
+  .infoInteres .gridHisopado .imgHisopado img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .infoInteres .gridHisopado .txtHisopado {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 20px;
+  }
+  .infoInteres .gridDeclaracion {
+    -ms-grid-columns: 2fr 0fr;
+        grid-template-columns: 2fr 0fr;
+  }
+  .infoInteres .gridDeclaracion .imgDeclaracion img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .infoInteres .gridDeclaracion .txtDeclaracion {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 20px;
+  }
+  .infoInteres .gridApplus {
+    -ms-grid-columns: 0fr 2fr;
+        grid-template-columns: 0fr 2fr;
+  }
+  .infoInteres .gridApplus .imgApplus img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .infoInteres .gridApplus .txtApplus {
+    padding: 20px;
+  }
+  .infoInteres .gridTarifa {
+    -ms-grid-columns: 2fr 0fr;
+        grid-template-columns: 2fr 0fr;
+  }
+  .infoInteres .gridTarifa .imgTarifa img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .infoInteres .gridTarifa .txtTarifa {
+    padding: 20px;
+  }
+  .infoInteres .gridMercancia {
+    -ms-grid-columns: 0fr 2fr;
+        grid-template-columns: 0fr 2fr;
+  }
+  .infoInteres .gridMercancia .imgMercancia img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .infoInteres .gridMercancia .txtMercancia {
+    padding: 20px;
+  }
+}
+
 .flexFaq {
   display: -webkit-box;
   display: -ms-flexbox;
