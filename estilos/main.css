@@ -464,7 +464,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 730px) {
   .flexInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -533,7 +533,7 @@
             flex-direction: column;
     height: 230px;
     padding: auto;
-    background-color: transparent;
+    background-color: #043191;
   }
   .flexMapa__ubicacion {
     display: -webkit-box;
@@ -549,7 +549,7 @@
     width: 80%;
   }
   .flexMapa__ubicacion h2 {
-    color: #043191;
+    color: rgba(253, 200, 131, 0.932);
     font-size: 25px;
   }
   .flexMapa__ubicacion article {
