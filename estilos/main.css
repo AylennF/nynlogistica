@@ -1900,6 +1900,7 @@
   color: black;
   font-size: 25px;
   font-family: "Roboto Slab", serif;
+  margin: 0;
 }
 
 .flexFaq article {
@@ -1911,9 +1912,8 @@
 }
 
 .flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
-  height: 9vh;
+  height: 40px;
   width: 90vw;
-  position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -1921,30 +1921,27 @@
       align-self: center;
   background-color: rgba(233, 236, 245, 0.863);
   margin-bottom: 1vh;
-  -webkit-transition: height 0.4s ease-out;
-  transition: height 0.4s ease-out;
+  padding-top: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   border-style: solid;
   border-width: 0.5px;
   border-color: rgba(134, 155, 248, 0.13);
 }
 
 .flexFaq .tarjeta .contenido, .flexFaq .flexContacto #andres .contenido, .flexContacto .flexFaq #andres .contenido, .flexFaq .flexContacto #florencia .contenido, .flexContacto .flexFaq #florencia .contenido {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
   visibility: hidden;
 }
 
 .flexFaq .tarjeta:hover, .flexFaq .flexContacto #andres:hover, .flexContacto .flexFaq #andres:hover, .flexFaq .flexContacto #florencia:hover, .flexContacto .flexFaq #florencia:hover {
   height: 27%;
   padding-bottom: 0.5vh;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .flexFaq .tarjeta:hover .contenido, .flexFaq .flexContacto #andres:hover .contenido, .flexContacto .flexFaq #andres:hover .contenido, .flexFaq .flexContacto #florencia:hover .contenido, .flexContacto .flexFaq #florencia:hover .contenido {
   visibility: visible;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
 }
 
 .flexMasInfo {
@@ -1955,6 +1952,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 100px;
 }
@@ -1968,8 +1968,13 @@
 }
 
 .flexMasInfo .boton {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 200px;
-  height: 3%;
+  height: 100%;
   margin-left: 50%;
   padding: 0;
   background-color: #043191;
@@ -1984,6 +1989,136 @@
   font-size: 20px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+}
+
+.flexMasInfo .boton:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #c8d6e4;
+}
+
+.flexMasInfo .boton:hover a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #043191;
+}
+
+@media (max-width: 990px) {
+  .flexFaq {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .flexFaq h3 {
+    font-size: 20px;
+  }
+  .flexFaq article {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
+    height: 40px;
+    width: 90vw;
+    margin-bottom: 1vh;
+    padding-top: 5px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .flexFaq .tarjeta .contenido, .flexFaq .flexContacto #andres .contenido, .flexContacto .flexFaq #andres .contenido, .flexFaq .flexContacto #florencia .contenido, .flexContacto .flexFaq #florencia .contenido {
+    visibility: hidden;
+  }
+  .flexFaq .tarjeta:hover, .flexFaq .flexContacto #andres:hover, .flexContacto .flexFaq #andres:hover, .flexFaq .flexContacto #florencia:hover, .flexContacto .flexFaq #florencia:hover {
+    height: 27%;
+    padding-bottom: 0.5vh;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .flexFaq .tarjeta:hover .contenido, .flexFaq .flexContacto #andres:hover .contenido, .flexContacto .flexFaq #andres:hover .contenido, .flexFaq .flexContacto #florencia:hover .contenido, .flexContacto .flexFaq #florencia:hover .contenido {
+    visibility: visible;
+  }
+  .flexMasInfo {
+    margin: 0;
+    padding: 100px;
+  }
+  .flexMasInfo h3 {
+    font-size: 30px;
+  }
+  .flexMasInfo h4 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 800px) {
+  .flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
+    height: 30px;
+  }
+  .flexFaq h3 {
+    font-size: 17px;
+  }
+  .flexFaq article {
+    font-size: 14px;
+  }
+  .flexMasInfo h3 {
+    font-size: 25px;
+  }
+  .flexMasInfo h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 675px) {
+  .flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
+    height: 30px;
+  }
+  .flexFaq h3 {
+    font-size: 15px;
+  }
+  .flexFaq article {
+    font-size: 14px;
+  }
+  .flexMasInfo h3 {
+    font-size: 25px;
+  }
+  .flexMasInfo h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 585px) {
+  .flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
+    height: 20px;
+  }
+  .flexFaq h3 {
+    font-size: 12px;
+  }
+  .flexFaq article {
+    font-size: 10px;
+  }
+  .flexMasInfo h3 {
+    font-size: 25px;
+  }
+  .flexMasInfo h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 475px) {
+  .flexFaq .tarjeta, .flexFaq .flexContacto #andres, .flexContacto .flexFaq #andres, .flexFaq .flexContacto #florencia, .flexContacto .flexFaq #florencia {
+    height: 15px;
+  }
+  .flexFaq h3 {
+    font-size: 10px;
+  }
+  .flexFaq article {
+    font-size: 10px;
+  }
+  .flexMasInfo h3 {
+    font-size: 25px;
+  }
+  .flexMasInfo h4 {
+    padding: 4px;
+    font-size: 10px;
+  }
 }
 
 .flexServicio {
