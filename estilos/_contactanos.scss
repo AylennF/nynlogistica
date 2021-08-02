@@ -62,16 +62,10 @@
     justify-content: space-around;
     text-align: center;
     
-    h1 {
-      color:$colorAzul;
-      font-size: $h1Desk;
-      font-family:$roboto;
-    }
-
-    h3 {
+    h2 {
       font-weight:500;
       margin-top:1vh;
-      color:$colorAzulTarjetas;
+      color:$colorAzul;
       font-size: $h3Desk;
       font-family:$monserrat;
       span{
@@ -79,7 +73,7 @@
       }
     }
 
-    h4 {
+    h3 {
         color:$colorNegro;
         font-size:  17px;
         font-weight: 500;

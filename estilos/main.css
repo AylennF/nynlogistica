@@ -975,13 +975,7 @@
   text-align: center;
 }
 
-.flexContacto h1 {
-  color: #043191;
-  font-size: 40px;
-  font-family: "Roboto Slab", serif;
-}
-
-.flexContacto h3 {
+.flexContacto h2 {
   font-weight: 500;
   margin-top: 1vh;
   color: #043191;
@@ -989,11 +983,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.flexContacto h3 span {
+.flexContacto h2 span {
   font-weight: bold;
 }
 
-.flexContacto h4 {
+.flexContacto h3 {
   color: black;
   font-size: 17px;
   font-weight: 500;
@@ -1002,7 +996,7 @@
   margin: 22px 0 5px 0;
 }
 
-.flexContacto h4 i {
+.flexContacto h3 i {
   color: #aaa6a6;
 }
 
