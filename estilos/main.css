@@ -763,61 +763,88 @@
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 200px;
+  padding-top: 3em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
   background-color: #111111;
-  margin: 0px;
 }
 
-.footer__grid {
-  color: #f0f0f0;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "Logo LineaFooter";
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -ms-grid-columns: 0.3fr 1.7fr;
-      grid-template-columns: 0.3fr 1.7fr;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-}
-
-.footer__grid__logo {
-  padding-top: 17px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: Logo;
+.footer__ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  border-right: dashed 1px rgba(255, 255, 255, 0.548);
+  width: 40vw;
+  height: 100%;
 }
 
-.footer__grid__logo__n {
-  font-size: 22px;
-  font-family: "Roboto Slab", serif;
-  color: #f0f0f0;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-}
-
-.footer__grid__logo__anpersand {
-  font-size: 13px;
-  font-weight: light;
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-}
-
-.footer__grid__logo__comercio {
+.footer__ubicacion h3 {
+  position: relative;
+  margin: 4px;
+  text-decoration: none;
+  color: #7c7a7a;
   font-size: 14px;
-  font-weight: light;
-  color: #f0f0f0;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #7c7a7a;
 }
 
-.footer__grid__linea {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: LineaFooter;
+.footer__ubicacion h5 {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__ubicacion h5 a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__contactos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
+  width: 40vw;
+}
+
+.footer__contactos h3 {
+  position: relative;
+  margin: 4px;
+  text-decoration: none;
+  color: #7c7a7a;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #7c7a7a;
+}
+
+.footer__contactos h4 {
+  margin: 4px;
   text-decoration: none;
   color: #f0f0f0;
   font-size: 14px;
@@ -825,78 +852,218 @@
   font-weight: bold;
 }
 
-.footer__grid__linea a {
+.footer__contactos h5 {
+  margin: 4px;
   text-decoration: none;
   color: #f0f0f0;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
-@media (max-width: 750px) {
+.footer__contactos h5 a {
+  margin: 4px;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+.footer__contactos h5 i {
+  visibility: visible;
+  margin-right: 5px;
+}
+
+.footer__contactos h6 {
+  margin: 4px 4px 4px 20px;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+.footer__contactos h6 a {
+  margin: 4px 4px 4px 20px;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+.footer__contactos h6 i {
+  visibility: visible;
+  margin-right: 5px;
+}
+
+.footer__contactos__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer__contactos__contenedor__andres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__contactos__contenedor__florencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 840px) {
+  .footer__ubicacion h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer__ubicacion h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer__ubicacion h5 a {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer__contactos h3 {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__contactos h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer__contactos h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer__contactos h5 a {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer__contactos h5 i {
+    visibility: hidden;
+  }
+  .footer__contactos h6 {
+    font-size: 12px;
+  }
+  .footer__contactos h6 a {
+    font-size: 12px;
+  }
+  .footer__contactos h6 a i {
+    visibility: hidden;
+  }
+  .footer__contactos__contenedor__andres {
+    font-size: 12px;
+  }
+  .footer__contactos__contenedor__florencia {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 710px) {
   .footer {
-    background-color: #111111;
-    margin: 0px;
+    margin: 0;
   }
-  .footer__grid {
-    color: #f0f0f0;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "Logo LineaFooter";
-    -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
-    -ms-grid-columns: 0.3fr 1.7fr;
-        grid-template-columns: 0.3fr 1.7fr;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
+  .footer__ubicacion {
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .footer__grid__logo {
-    padding-top: 17px;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: Logo;
-    text-align: center;
-    border-right: dashed 1px rgba(255, 255, 255, 0.548);
-  }
-  .footer__grid__logo__n {
-    font-size: 14px;
-    font-family: "Roboto Slab", serif;
-    color: #f0f0f0;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-  }
-  .footer__grid__logo__anpersand {
-    font-size: 13px;
-    font-weight: light;
-    font-family: "Roboto Slab", serif;
-    text-align: center;
-  }
-  .footer__grid__logo__comercio {
+  .footer__ubicacion h3 {
     font-size: 10px;
-    font-weight: light;
-    color: #f0f0f0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    margin: 2px;
+    padding: 0;
   }
-  .footer__grid__linea {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: LineaFooter;
-    text-align: center;
-    text-decoration: none;
-    color: #f0f0f0;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-  }
-  .footer__grid__linea a {
-    text-decoration: none;
-    color: #f0f0f0;
+  .footer__ubicacion h5 {
     font-size: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    margin: 2px;
+    padding: 0;
   }
+  .footer__ubicacion h5 a {
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .footer__contactos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .footer__contactos h3 {
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .footer__contactos h4 {
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .footer__contactos h5 {
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .footer__contactos h5 a {
+    padding: 0;
+    margin: 2px;
+    font-size: 10px;
+  }
+  .footer__contactos h5 i {
+    visibility: hidden;
+    position: relative;
+  }
+  .footer__contactos h6 {
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .footer__contactos h6 a {
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .footer__contactos__contenedor__andres {
+    font-size: 10px;
+  }
+  .footer__contactos__contenedor__florencia {
+    font-size: 10px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: blue;
 }
 
 .sectionContacto {
@@ -2050,8 +2217,8 @@
   background-color: rgba(233, 236, 245, 0.863);
   margin-bottom: 1vh;
   padding-top: 5px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-style: solid;
   border-width: 0.5px;
   border-color: rgba(134, 155, 248, 0.13);
@@ -2069,6 +2236,8 @@
 }
 
 .flexFaq .tarjeta:hover .contenido, .flexFaq .flexContacto #andres:hover .contenido, .flexContacto .flexFaq #andres:hover .contenido, .flexFaq .flexContacto #florencia:hover .contenido, .flexContacto .flexFaq #florencia:hover .contenido {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   visibility: visible;
 }
 
