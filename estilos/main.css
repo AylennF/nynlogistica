@@ -969,7 +969,8 @@
     font-size: 12px;
   }
   .footer__contactos h5 i {
-    visibility: hidden;
+    visibility: visible;
+    margin-right: 5px;
   }
   .footer__contactos h6 {
     font-size: 12px;
